@@ -4831,3 +4831,36 @@ html {
     transform: translateY(-10px) scale(1.02) !important;
 }
 
+/* ===== FOOTER ===== */
+
+.footer {
+    background: var(--color-bg-dark);
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+.footer p {
+    color: var(--color-text-light);
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Footer Mobile Responsive */
+@media (max-width: 768px) {
+    .footer {
+        padding: var(--spacing-md) 0;
+    }
+    
+    .footer p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer p {
+        font-size: 0.75rem;
+        padding: 0 var(--spacing-sm);
+    }
+}
+
