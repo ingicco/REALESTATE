@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Villa Portfolio - UAE Villa Specialists</title>
+    <meta name="description" content="Discover your ideal villa in the UAE. Search our complete portfolio of luxury properties across Dubai's most exclusive communities.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="properties.css">
+</head>
+<body>
+    <!-- Desktop Header Navigation -->
+    <header class="desktop-header">
+        <div class="container">
+            <nav class="header-nav">
+                <a href="/" class="logo">UAE Villa Specialists</a>
+                <div class="nav-links">
+                    <a href="/">Home</a>
+                    <a href="/properties" class="active">Properties</a>
+                    <a href="/#guides">Guides</a>
+                    <a href="/#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="properties-header">
+        <div class="container">
+            <h1 class="page-title">Discover Your Ideal Villa in the UAE</h1>
+            <p class="page-subtitle">Use the filters below to search our complete portfolio of luxury properties across Dubai's most exclusive communities.</p>
+        </div>
+    </section>
+
+    <!-- Search & Filter Bar -->
+    <section class="search-filters">
+        <div class="container">
+            <form class="filter-form" id="propertyFilters">
+                <div class="filter-row">
+                    <div class="filter-group">
+                        <label for="searchKeyword">Community or Keyword</label>
+                        <input type="text" id="searchKeyword" name="searchKeyword" placeholder="e.g., Palm Jumeirah, golf view">
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="community">Community</label>
+                        <select id="community" name="community">
+                            <option value="">All Communities</option>
+                            <option value="palm-jumeirah">Palm Jumeirah</option>
+                            <option value="dubai-hills">Dubai Hills Estate</option>
+                            <option value="emirates-hills">Emirates Hills</option>
+                            <option value="arabian-ranches">Arabian Ranches</option>
+                            <option value="jumeirah-golf">Jumeirah Golf Estates</option>
+                            <option value="al-barari">Al Barari</option>
+                            <option value="mohammed-bin-rashid">Mohammed Bin Rashid City</option>
+                            <option value="damac-hills">DAMAC Hills</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="bedrooms">Minimum Bedrooms</label>
+                        <select id="bedrooms" name="bedrooms">
+                            <option value="">Any</option>
+                            <option value="2">2+ Bedrooms</option>
+                            <option value="3">3+ Bedrooms</option>
+                            <option value="4">4+ Bedrooms</option>
+                            <option value="5">5+ Bedrooms</option>
+                            <option value="6">6+ Bedrooms</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="priceRange">Price Range</label>
+                        <select id="priceRange" name="priceRange">
+                            <option value="">Any Price</option>
+                            <option value="0-10000000">Under AED 10M</option>
+                            <option value="10000000-25000000">AED 10M - 25M</option>
+                            <option value="25000000-50000000">AED 25M - 50M</option>
+                            <option value="50000000-100000000">AED 50M - 100M</option>
+                            <option value="100000000-999999999">Above AED 100M</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <button type="submit" class="btn btn-primary search-btn">
+                            <i class="fas fa-search"></i>
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Results Summary -->
+    <section class="results-summary">
+        <div class="container">
+            <div class="summary-content">
+                <p class="results-count" id="resultsCount">Showing 24 of 156 properties</p>
+                <div class="sort-options">
+                    <label for="sortBy">Sort by:</label>
+                    <select id="sortBy" name="sortBy">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="bedrooms">Bedrooms</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Listings Grid -->
+    <section class="property-listings">
+        <div class="container">
+            <div class="properties-grid" id="propertiesGrid">
+                <!-- Property cards will be dynamically generated here -->
+            </div>
+            
+            <!-- Loading State -->
+            <div class="loading-state" id="loadingState" style="display: none;">
+                <div class="loading-spinner"></div>
+                <p>Searching properties...</p>
+            </div>
+            
+            <!-- No Results State -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No properties found</h3>
+                <p>Try adjusting your search criteria or browse all properties.</p>
+                <button class="btn btn-outline" onclick="clearFilters()">Clear All Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <section class="pagination-section">
+        <div class="container">
+            <nav class="pagination" id="pagination">
+                <button class="pagination-btn prev-btn" id="prevBtn" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                    Previous
+                </button>
+                
+                <div class="pagination-numbers" id="paginationNumbers">
+                    <!-- Page numbers will be dynamically generated -->
+                </div>
+                
+                <button class="pagination-btn next-btn" id="nextBtn">
+                    Next
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </nav>
+            
+            <div class="pagination-info">
+                <p id="paginationInfo">Page 1 of 7</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="/" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="/properties" class="nav-item active">
+            <i class="fas fa-key"></i>
+            <span>Properties</span>
+        </a>
+        <a href="/#guides" class="nav-item">
+            <i class="fas fa-book"></i>
+            <span>Guides</span>
+        </a>
+        <a href="/#contact" class="nav-item">
+            <i class="fas fa-phone"></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
+    <script src="properties.js"></script>
+</body>
+</html>
+
+

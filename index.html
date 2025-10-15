@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAE's Premier Gateway for International Capital | Luxury Property Investment</title>
+    <meta name="description" content="Premium off-plan & off-market properties in UAE. Expert advice for high-value international buyers. Seamless relocation support and investment guidance.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">Invest in Dubai's elite addresses</h1>
+                    <p class="hero-subtitle">Premium off-plan & off-market properties. Expert advice for high-value buyers. Seamless relocation support.</p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary hero-btn" onclick="scrollToContact()">
+                            <span>Claim Your Free Portfolio Review</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-images">
+                    <div class="image-grid">
+                        <div class="image-item large">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Dubai Interior">
+                        </div>
+                        <div class="image-item small top">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dubai Skyline View">
+                        </div>
+                        <div class="image-item small bottom">
+                            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Bathroom">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section id="value" class="value-section">
+        <div class="container">
+            <div class="value-cards-grid">
+                <div class="value-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Cross-Border Investment" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-text-content">
+                            <h3>Cross-Border Investment</h3>
+                            <div class="hover-content">
+                                <p class="card-description">Navigate complex international regulations and tax implications with expert guidance tailored for sophisticated global investors.</p>
+                                <button class="learn-more-btn" onclick="openValueModal('investment')">Learn more →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="value-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Tax Optimization" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-text-content">
+                            <h3>Tax Optimization</h3>
+                            <div class="hover-content">
+                                <p class="card-description">Maximize your investment returns through strategic tax planning and UAE's favorable regulatory environment for international investors.</p>
+                                <button class="learn-more-btn" onclick="openValueModal('tax')">Learn more →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="value-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Portfolio Strategy" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-text-content">
+                            <h3>Portfolio Strategy</h3>
+                            <div class="hover-content">
+                                <p class="card-description">Integrate UAE properties seamlessly into your global portfolio with institutional-grade analysis and strategic asset allocation.</p>
+                                <button class="learn-more-btn" onclick="openValueModal('portfolio')">Learn more →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Modals -->
+    <div id="valueModal" class="value-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle"></h3>
+                <span class="close-modal" onclick="closeValueModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="modalContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="privacy-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Privacy Policy</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="privacy-content">
+                    <div class="privacy-section">
+                        <h4>Information We Collect</h4>
+                        <p>We collect information you provide directly to us, such as when you fill out our contact form, request consultations, or communicate with us. This may include:</p>
+                        <ul>
+                            <li>Personal identification information (name, email address, phone number)</li>
+                            <li>Country of residence and investment preferences</li>
+                            <li>Investment range and timeline information</li>
+                            <li>Any additional information you choose to provide</li>
+                        </ul>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h4>How We Use Your Information</h4>
+                        <p>We use the information we collect to:</p>
+                        <ul>
+                            <li>Respond to your inquiries and provide requested services</li>
+                            <li>Schedule and conduct consultations</li>
+                            <li>Provide personalized investment recommendations</li>
+                            <li>Send you relevant market updates and property information</li>
+                            <li>Improve our services and website functionality</li>
+                        </ul>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h4>Information Sharing and Disclosure</h4>
+                        <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy. We may share your information:</p>
+                        <ul>
+                            <li>With trusted service providers who assist in our operations</li>
+                            <li>When required by law or to protect our rights</li>
+                            <li>In connection with a business transfer or acquisition</li>
+                        </ul>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h4>Data Security</h4>
+                        <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. All consultations and communications are conducted under strict confidentiality protocols.</p>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h4>Your Rights</h4>
+                        <p>You have the right to:</p>
+                        <ul>
+                            <li>Access and update your personal information</li>
+                            <li>Request deletion of your data</li>
+                            <li>Opt-out of marketing communications</li>
+                            <li>Request information about how your data is processed</li>
+                        </ul>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h4>Contact Information</h4>
+                        <p>If you have any questions about this Privacy Policy or our data practices, please contact us through our secure contact form or consultation booking system.</p>
+                    </div>
+
+                    <div class="privacy-footer">
+                        <p><strong>Last Updated:</strong> October 2025</p>
+                        <p>This Privacy Policy may be updated from time to time. We will notify you of any material changes by posting the new Privacy Policy on this page.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Slider Section -->
+    <section id="benefits" class="luxury-benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Smart Investors Choose Specialized UAE Experts</h2>
+                <p class="section-subtitle">Navigating UAE property investment requires deep market knowledge, regulatory expertise, and strategic positioning that only specialized advisors can provide</p>
+            </div>
+            
+            <div class="luxury-slider">
+                <div class="slider-content">
+                    <div class="slide-text">
+                        <h3 class="slide-title">Cross-Border Investment Mastery</h3>
+                        <div class="slide-description">
+                            <p><strong>The Challenge:</strong> Sophisticated investors and relocating families face regulatory complexities, tax optimization challenges, and information asymmetries that demand institutional-level expertise.</p>
+                            <p><strong>Our Approach:</strong> Comprehensive due diligence combining legal structuring, tax optimization, and exclusive off-market access unavailable to retail buyers.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-images">
+                    <div class="image-container active">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Cross-Border Investment" loading="lazy">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Tax Optimization" loading="lazy">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Portfolio Integration" loading="lazy">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Market Intelligence" loading="lazy">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Exit Strategy" loading="lazy">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Asset Management" loading="lazy">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                
+                <div class="slider-navigation">
+                    <button class="nav-btn prev-btn" onclick="prevSlide()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-btn next-btn" onclick="nextSlide()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="benefits-cta">
+                <h3>Ready to Optimize Your UAE Investment Strategy?</h3>
+                <p>Schedule a free confidential consultation to discuss your investment objectives</p>
+                <button class="btn btn-primary" onclick="scrollToContact()">
+                    <span>Start Your UAE Investment Journey</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <p class="testimonials-label">WHAT OUR CLIENTS SAY</p>
+            
+            <div class="testimonial-content">
+                <div class="testimonial-quote">
+                    "Expert advice, seamless process, and unmatched access to exclusive properties. Their team made my investment journey in the UAE effortless and rewarding. I highly recommend their services to anyone seeking premier real estate opportunities."
+                </div>
+                
+                <div class="testimonial-author">
+                    <div class="author-name">Jordan Ellis</div>
+                    <div class="author-title">Global Real Estate Investor</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="services-container">
+            <div class="services-header">
+                <h2 class="services-title">Exclusive market intelligence,<br>delivered daily</h2>
+            </div>
+            
+                <div class="services-content">
+                    <!-- Mobile 2x2 Grid (hidden on desktop) -->
+                    <div class="small-images-grid">
+                        <div class="mobile-service-item">
+                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Off-plan investment highlights">
+                            <div class="service-text">
+                                <h3>Off-plan investment highlights</h3>
+                                <p>Unlock early access to elite new developments in prime districts.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mobile-service-item">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Relocation expertise">
+                            <div class="service-text">
+                                <h3>Relocation expertise</h3>
+                                <p>Comprehensive support for global buyers entering the luxury market.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mobile-service-item">
+                            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Market intelligence">
+                            <div class="service-text">
+                                <h3>Market intelligence</h3>
+                                <p>In-depth analysis of premium property trends and values.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mobile-service-item">
+                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Private listings">
+                            <div class="service-text">
+                                <h3>Private listings</h3>
+                                <p>View confidential opportunities not found on public channels.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Desktop Columns (hidden on mobile) -->
+                    <div class="desktop-columns">
+                        <!-- Column 1: Two small images stacked -->
+                        <div class="services-column">
+                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Off-plan investment highlights">
+                            <div class="service-text">
+                                <h3>Off-plan investment highlights</h3>
+                                <p>Unlock early access to elite new developments in prime districts.</p>
+                            </div>
+                            
+                            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Market intelligence">
+                            <div class="service-text">
+                                <h3>Market intelligence</h3>
+                                <p>In-depth analysis of premium property trends and values.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Column 2: Two small images stacked -->
+                        <div class="services-column">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Relocation expertise">
+                            <div class="service-text">
+                                <h3>Relocation expertise</h3>
+                                <p>Comprehensive support for global buyers entering the luxury market.</p>
+                            </div>
+                            
+                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Private listings">
+                            <div class="service-text">
+                                <h3>Private listings</h3>
+                                <p>View confidential opportunities not found on public channels.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Column 3: One large image -->
+                        <div class="services-column">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80" alt="Property spotlight" class="large-image">
+                            <div class="service-text">
+                                <h3>Property spotlight</h3>
+                                <p>Explore this month's premier listing. Request a private briefing for full details.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Column 4: Text sidebar -->
+                        <div class="services-sidebar">
+                            <div class="sidebar-section">
+                                <h4>Request a consultation</h4>
+                                <p>Schedule a call with a senior advisor to discuss your objectives.</p>
+                            </div>
+                            
+                            <div class="sidebar-section">
+                                <h4>Buyer essentials</h4>
+                                <p>Your guide to purchasing high-end property in the UAE.</p>
+                            </div>
+                            
+                            <div class="sidebar-section">
+                                <h4>Residency options</h4>
+                                <p>Review visa pathways for investors and their families.</p>
+                            </div>
+                            
+                            <div class="sidebar-section">
+                                <h4>Market updates</h4>
+                                <p>Get the latest on regulations, launches, and trends.</p>
+                            </div>
+                            
+                            <div class="sidebar-section">
+                                <h4>Connect</h4>
+                                <p>Request tailored property matches and expert guidance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Large Image (shown on mobile only) -->
+                    <div class="mobile-large-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300&q=80" alt="Property spotlight">
+                        <div class="service-text">
+                            <h3>Property spotlight</h3>
+                            <p>Explore this month's premier listing. Request a private briefing for full details.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Sidebar (shown on mobile only) -->
+                    <div class="mobile-sidebar">
+                        <div class="sidebar-section">
+                            <h4>Request a consultation</h4>
+                            <p>Schedule a call with a senior advisor to discuss your objectives.</p>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <h4>Buyer essentials</h4>
+                            <p>Your guide to purchasing high-end property in the UAE.</p>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <h4>Residency options</h4>
+                            <p>Review visa pathways for investors and their families.</p>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <h4>Market updates</h4>
+                            <p>Get the latest on regulations, launches, and trends.</p>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <h4>Connect</h4>
+                            <p>Request tailored property matches and expert guidance.</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-header">
+                <h2 class="faq-title">Expert answers for luxury buyers</h2>
+                <p class="faq-subtitle">Key insights for elite property investors.</p>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the entry price point?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our minimum investment threshold is AED 10M for off-market opportunities. This ensures access to institutional-grade properties with proven appreciation potential and exclusive developer allocations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer relocation support?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide comprehensive relocation services including Golden Visa facilitation, school enrollment, banking relationships, and lifestyle integration for UHNW families moving to the UAE.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Who can access off-market listings?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Off-market access is reserved for qualified ultra-high-net-worth clients with established wealth management relationships and serious UAE investment intent. Pre-qualification is required.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I book a consultation?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Schedule a confidential consultation through our secure booking system. All discussions are NDA-protected and tailored to your specific investment objectives and timeline.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are the tax implications for international buyers?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>UAE property investments offer significant tax advantages including zero personal income tax, no capital gains tax, and favorable double taxation treaties with 140+ countries. We coordinate with your existing tax advisors to optimize your global tax position.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does the Golden Visa program work?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Property investments of AED 2M+ qualify for the UAE Golden Visa, providing 10-year renewable residency for you and your family. We handle the entire application process and coordinate with immigration specialists.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What financing options are available?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>UAE banks offer competitive mortgage rates for international buyers, typically 70-80% LTV for residents and 50-60% for non-residents. We have preferred relationships with private banks offering institutional-grade financing solutions.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does the purchase process take?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ready properties can complete in 2-4 weeks with proper documentation. Off-plan investments follow developer payment schedules. We expedite all processes and coordinate with your legal and financial teams globally.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What ongoing management services do you provide?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our institutional-grade asset management includes rental optimization, property maintenance, financial reporting, and exit strategy planning. We act as your single point of contact for all UAE property matters.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I purchase property through a corporate structure?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we facilitate purchases through UAE and international corporate structures for tax optimization and estate planning. Our legal partners specialize in cross-border structuring for UHNW families and family offices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-header">
+                <h2 class="contact-title">Connect. Consult. Invest. Succeed.</h2>
+                <p class="contact-subtitle">Begin your UAE investment journey with personalized guidance from our elite property specialists</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="country">Country of Residence *</label>
+                            <select id="country" name="country" required>
+                                <option value="">Select your country</option>
+                                <option value="US">United States</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="CA">Canada</option>
+                                <option value="AU">Australia</option>
+                                <option value="DE">Germany</option>
+                                <option value="FR">France</option>
+                                <option value="CH">Switzerland</option>
+                                <option value="SG">Singapore</option>
+                                <option value="HK">Hong Kong</option>
+                                <option value="IN">India</option>
+                                <option value="SA">Saudi Arabia</option>
+                                <option value="QA">Qatar</option>
+                                <option value="KW">Kuwait</option>
+                                <option value="BH">Bahrain</option>
+                                <option value="OM">Oman</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="investmentRange">Investment Range *</label>
+                            <select id="investmentRange" name="investmentRange" required>
+                                <option value="">Select investment range</option>
+                                <option value="5-10M">AED 5M - 10M</option>
+                                <option value="10-25M">AED 10M - 25M</option>
+                                <option value="25-50M">AED 25M - 50M</option>
+                                <option value="50-100M">AED 50M - 100M</option>
+                                <option value="100M+">AED 100M+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="investmentType">Primary Interest *</label>
+                            <select id="investmentType" name="investmentType" required>
+                                <option value="">Select primary interest</option>
+                                <option value="investment">Investment Properties</option>
+                                <option value="relocation">Relocation & Residency</option>
+                                <option value="both">Both Investment & Relocation</option>
+                                <option value="golden-visa">Golden Visa Program</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="timeline">Investment Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select timeline</option>
+                                <option value="immediate">Immediate (0-3 months)</option>
+                                <option value="short">Short-term (3-6 months)</option>
+                                <option value="medium">Medium-term (6-12 months)</option>
+                                <option value="long">Long-term (12+ months)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your specific requirements, preferred locations, or any questions you have..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">I agree to the <a href="#" class="privacy-link">Privacy Policy</a> and consent to being contacted regarding UAE investment opportunities *</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="contact-submit-btn">
+                            <span>Schedule Confidential Consultation</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-assurance">
+                        <div class="assurance-header">
+                            <div class="assurance-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Your Privacy is Our Priority</h3>
+                            <p>All inquiries are handled with the utmost confidentiality and discretion</p>
+                        </div>
+                        
+                        <div class="assurance-details">
+                            <div class="assurance-item">
+                                <div class="assurance-item-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="assurance-item-content">
+                                    <h4>24-48 Hour Response</h4>
+                                    <p>Our senior advisors will personally review your inquiry and respond within 24-48 hours with tailored recommendations</p>
+                                </div>
+                            </div>
+                            
+                            <div class="assurance-item">
+                                <div class="assurance-item-icon">
+                                    <i class="fas fa-user-lock"></i>
+                                </div>
+                                <div class="assurance-item-content">
+                                    <h4>Strict Confidentiality</h4>
+                                    <p>Your information is protected under NDA protocols. We never share client details or investment intentions with third parties</p>
+                                </div>
+                            </div>
+                            
+                            <div class="assurance-item">
+                                <div class="assurance-item-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="assurance-item-content">
+                                    <h4>Elite Service Standard</h4>
+                                    <p>Direct access to senior partners and institutional-grade market intelligence reserved for our most valued clients</p>
+                                </div>
+                            </div>
+                            
+                            <div class="assurance-item">
+                                <div class="assurance-item-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="assurance-item-content">
+                                    <h4>No Obligation Consultation</h4>
+                                    <p>Explore opportunities without commitment. Our initial consultation is complimentary and designed to understand your objectives</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="assurance-footer">
+                            <div class="footer-note">
+                                <i class="fas fa-certificate"></i>
+                                <span>Trusted by ultra-high-net-worth families and institutional investors worldwide</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 UAE Luxury Properties. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#value" class="nav-item" onclick="scrollToSection('value')">
+            <i class="fas fa-lightbulb"></i>
+            <span>Solutions</span>
+        </a>
+        <a href="#services" class="nav-item" onclick="scrollToSection('services')">
+            <i class="fas fa-cogs"></i>
+            <span>Services</span>
+        </a>
+        <a href="#benefits" class="nav-item" onclick="scrollToSection('benefits')">
+            <i class="fas fa-chart-line"></i>
+            <span>Benefits</span>
+        </a>
+        <a href="#contact" class="nav-item mobile-nav-cta" onclick="scrollToContact()">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+/*
+Theme Name: UAE Villa Specialists
+Description: A luxury real estate theme for UAE villa specialists, featuring property listings, advanced search, and lead generation.
+Author: UAE Villa Specialists
+Version: 1.0.0
+Text Domain: uae-villas
+Domain Path: /languages
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 8.0
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+UAE Villa Specialists WordPress Theme
+Copyright (C) 2024 UAE Villa Specialists
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+*/
+
+/* This file serves as the theme identifier for WordPress.
+   All actual styles are loaded via functions.php from assets/css/ */
+
+
