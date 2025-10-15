@@ -22,7 +22,7 @@
                     <p class="hero-subtitle">Premium off-plan & off-market properties. Expert advice for high-value buyers. Seamless relocation support.</p>
                     <div class="hero-cta">
                         <button class="btn btn-primary hero-btn" onclick="scrollToContact()">
-                            <span>Claim Your Free Portfolio Review</span>
+                            <span>Apply for Advisory Services</span>
                         </button>
                     </div>
                 </div>
@@ -181,129 +181,111 @@
         </div>
     </div>
 
-    <!-- Benefits Slider Section -->
-    <section id="benefits" class="luxury-benefits-section">
+    <!-- Services Specialties Section -->
+    <section id="benefits" class="specialties-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Smart Investors Choose Specialized UAE Experts</h2>
+                <h2 class="section-title">Our Service Specialties</h2>
+                <p class="section-subtitle">Six core competencies that define our advisory excellence</p>
             </div>
             
-            <div class="luxury-slider">
-                <div class="slider-content">
-                    <div class="slide-text">
-                        <h3 class="slide-title">Asset Management Excellence</h3>
-                        <div class="slide-description">
-                            <p><strong>The Challenge:</strong> Property owners need professional oversight to maximize returns, maintain asset value, and ensure seamless operations across their UAE portfolio.</p>
-                            <p><strong>Our Approach:</strong> Institutional-grade property management including tenant relations, maintenance oversight, financial reporting, and strategic value enhancement initiatives.</p>
+            <div class="specialties-grid">
+                <div class="specialty-card fade-in-up" onclick="openSpecialtyModal('asset-management')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Asset Management" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-text-content">
+                            <h3>Asset Management</h3>
+                            <div class="hover-content">
+                                <p class="card-description">Institutional-grade property oversight with comprehensive tenant management, performance tracking, and value optimization strategies.</p>
+                                <button class="learn-more-btn" onclick="event.stopPropagation(); openSpecialtyModal('asset-management')">View Details →</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="slider-images">
-                    <div class="image-container active">
-                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Asset Management" loading="lazy">
-                        <div class="image-overlay"></div>
+                <div class="specialty-card fade-in-up stagger-1" onclick="openSpecialtyModal('off-market')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Off-Market Access" loading="lazy">
                     </div>
-                    <div class="image-container">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Off-Market Opportunities" loading="lazy">
-                        <div class="image-overlay"></div>
-                    </div>
-                    <div class="image-container">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Portfolio Integration" loading="lazy">
-                        <div class="image-overlay"></div>
-                    </div>
-                    <div class="image-container">
-                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Market Intelligence" loading="lazy">
-                        <div class="image-overlay"></div>
-                    </div>
-                    <div class="image-container">
-                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Exit Strategy" loading="lazy">
-                        <div class="image-overlay"></div>
-                    </div>
-                    <div class="image-container">
-                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Asset Management" loading="lazy">
-                        <div class="image-overlay"></div>
-                    </div>
-                </div>
-                
-                <div class="slider-navigation">
-                    <button class="nav-btn prev-btn" onclick="prevSlide()">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="nav-btn next-btn" onclick="nextSlide()">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-            
-            <!-- Mobile Stacked Benefits (visible on mobile only) -->
-            <div class="mobile-benefits-stack">
-                <div class="mobile-benefit-card fade-in-up">
-                    <img class="mobile-benefit-image" src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Asset Management">
-                    <div class="mobile-benefit-content">
-                        <h3 class="mobile-benefit-title">Asset Management Excellence</h3>
-                        <div class="mobile-benefit-description">
-                            <p>Professional property management and optimization services to maximize returns and protect your UAE real estate investments.</p>
+                    <div class="card-content">
+                        <div class="card-text-content">
+                            <h3>Off-Market Access</h3>
+                            <div class="hover-content">
+                                <p class="card-description">Privileged access to pre-launch allocations, private treaty sales, and trophy properties through exclusive developer and UHNW seller relationships.</p>
+                                <button class="learn-more-btn" onclick="event.stopPropagation(); openSpecialtyModal('off-market')">View Details →</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="mobile-benefit-card fade-in-up stagger-1">
-                    <img class="mobile-benefit-image" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Off-Market Opportunities">
-                    <div class="mobile-benefit-content">
-                        <h3 class="mobile-benefit-title">Off-Market Opportunities</h3>
-                        <div class="mobile-benefit-description">
-                            <p>Exclusive access to premium properties not publicly listed, giving you first-mover advantage on Dubai's most coveted real estate.</p>
+                <div class="specialty-card fade-in-up stagger-2" onclick="openSpecialtyModal('portfolio')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Portfolio Strategy" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-text-content">
+                            <h3>Portfolio Strategy</h3>
+                            <div class="hover-content">
+                                <p class="card-description">Strategic integration of UAE real estate into global portfolios with institutional-grade analysis, risk modeling, and allocation optimization.</p>
+                                <button class="learn-more-btn" onclick="event.stopPropagation(); openSpecialtyModal('portfolio')">View Details →</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="mobile-benefit-card fade-in-up stagger-2">
-                    <img class="mobile-benefit-image" src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio Integration">
-                    <div class="mobile-benefit-content">
-                        <h3 class="mobile-benefit-title">Strategic Portfolio Integration</h3>
-                        <div class="mobile-benefit-description">
-                            <p>Seamlessly integrate UAE properties into your global portfolio with institutional-grade analysis and strategic allocation.</p>
+                <div class="specialty-card fade-in-up stagger-3" onclick="openSpecialtyModal('intelligence')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Market Intelligence" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-text-content">
+                            <h3>Market Intelligence</h3>
+                            <div class="hover-content">
+                                <p class="card-description">Proprietary research, data analytics, and market timing intelligence unavailable through public channels or retail advisory firms.</p>
+                                <button class="learn-more-btn" onclick="event.stopPropagation(); openSpecialtyModal('intelligence')">View Details →</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="mobile-benefit-card fade-in-up stagger-3">
-                    <img class="mobile-benefit-image" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Market Intelligence">
-                    <div class="mobile-benefit-content">
-                        <h3 class="mobile-benefit-title">Market Intelligence & Timing</h3>
-                        <div class="mobile-benefit-description">
-                            <p>Access institutional-grade research and exclusive market insights for optimal investment timing and positioning.</p>
+                <div class="specialty-card fade-in-up stagger-4" onclick="openSpecialtyModal('liquidity')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Liquidity Planning" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-text-content">
+                            <h3>Liquidity Planning</h3>
+                            <div class="hover-content">
+                                <p class="card-description">Strategic exit planning with institutional buyer networks, optimal disposal timing, and tax-efficient transaction structuring.</p>
+                                <button class="learn-more-btn" onclick="event.stopPropagation(); openSpecialtyModal('liquidity')">View Details →</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="mobile-benefit-card fade-in-up stagger-4">
-                    <img class="mobile-benefit-image" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Exit Strategy">
-                    <div class="mobile-benefit-content">
-                        <h3 class="mobile-benefit-title">Liquidity & Exit Strategy Excellence</h3>
-                        <div class="mobile-benefit-description">
-                            <p>Secure flexible exit strategies with institutional buyer networks and tax-optimized disposal planning.</p>
-                        </div>
+                <div class="specialty-card fade-in-up stagger-5" onclick="openSpecialtyModal('relocation')">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Relocation Services" loading="lazy">
                     </div>
-                </div>
-                
-                <div class="mobile-benefit-card fade-in-up stagger-5">
-                    <img class="mobile-benefit-image" src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Asset Management">
-                    <div class="mobile-benefit-content">
-                        <h3 class="mobile-benefit-title">Seamless Relocation & Asset Management</h3>
-                        <div class="mobile-benefit-description">
-                            <p>Complete relocation support including residency planning, asset management, and concierge-level lifestyle integration.</p>
+                    <div class="card-content">
+                        <div class="card-text-content">
+                            <h3>Relocation Services</h3>
+                            <div class="hover-content">
+                                <p class="card-description">White-glove relocation coordination including Golden Visa facilitation, banking setup, and concierge-level lifestyle integration.</p>
+                                <button class="learn-more-btn" onclick="event.stopPropagation(); openSpecialtyModal('relocation')">View Details →</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="benefits-cta">
-                <h3>Ready to Optimize Your UAE Investment Strategy?</h3>
-                <p>Schedule a free confidential consultation to discuss your investment objectives</p>
+                <h3>Partner With UAE's Premier Advisory</h3>
+                <p>Submit your application to be considered for our exclusive client roster</p>
                 <button class="btn btn-primary" onclick="scrollToContact()">
-                    <span>Start Your UAE Investment Journey</span>
+                    <span>Submit Application</span>
                 </button>
             </div>
         </div>
@@ -421,7 +403,7 @@
                             
                             <div class="sidebar-section sidebar-cta">
                                 <button class="btn btn-primary" onclick="scrollToContact()">
-                                    <span>Get Access to Market Reports</span>
+                                    <span>Request Access</span>
                                 </button>
                             </div>
                         </div>
@@ -454,7 +436,7 @@
                         
                         <div class="sidebar-section sidebar-cta">
                             <button class="btn btn-primary" onclick="scrollToContact()">
-                                <span>Get Access to Market Reports</span>
+                                <span>Request Access</span>
                             </button>
                         </div>
                     </div>
@@ -466,9 +448,9 @@
     <section class="contact-section">
         <div class="container">
             <div class="contact-header">
-                <h2 class="contact-title">Connect. Consult. Invest. Succeed.</h2>
-                <p class="contact-subtitle">Begin your UAE investment journey with personalized guidance from our elite property specialists</p>
-            </div>
+                        <h2 class="contact-title">Apply for Elite Advisory Services</h2>
+                        <p class="contact-subtitle">Submit your application to be considered for our exclusive client roster. Due to the bespoke nature of our services, we carefully select clients whose objectives align with our expertise.</p>
+                    </div>
             
             <div class="contact-content">
                 <div class="contact-form-container">
@@ -566,7 +548,7 @@
                         </div>
                         
                         <button type="submit" class="contact-submit-btn">
-                            <span>Schedule Confidential Consultation</span>
+                            <span>Submit Application</span>
                             <i class="fas fa-arrow-right"></i>
                         </button>
                     </form>
@@ -576,20 +558,20 @@
                     <div class="contact-assurance">
                         <div class="assurance-header">
                             <div class="assurance-icon">
-                                <i class="fas fa-shield-alt"></i>
+                                <i class="fas fa-user-check"></i>
                             </div>
-                            <h3>Your Privacy is Our Priority</h3>
-                            <p>All inquiries are handled with the utmost confidentiality and discretion</p>
+                            <h3>Selective Client Partnership</h3>
+                            <p>We maintain an exclusive roster of clients to ensure exceptional service delivery</p>
                         </div>
                         
                         <div class="assurance-details">
                             <div class="assurance-item">
                                 <div class="assurance-item-icon">
-                                    <i class="fas fa-clock"></i>
+                                    <i class="fas fa-clipboard-check"></i>
                                 </div>
                                 <div class="assurance-item-content">
-                                    <h4>24-48 Hour Response</h4>
-                                    <p>Our senior advisors will personally review your inquiry and respond within 24-48 hours with tailored recommendations</p>
+                                    <h4>Application Review</h4>
+                                    <p>Our partners personally review each application to ensure alignment with our service capabilities and your investment objectives</p>
                                 </div>
                             </div>
                             
@@ -598,28 +580,28 @@
                                     <i class="fas fa-user-lock"></i>
                                 </div>
                                 <div class="assurance-item-content">
-                                    <h4>Strict Confidentiality</h4>
-                                    <p>Your information is protected under NDA protocols. We never share client details or investment intentions with third parties</p>
+                                    <h4>Discretion Guaranteed</h4>
+                                    <p>All applications are handled with complete confidentiality under NDA protocols. Your information remains strictly private</p>
                                 </div>
                             </div>
                             
                             <div class="assurance-item">
                                 <div class="assurance-item-icon">
-                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-crown"></i>
                                 </div>
                                 <div class="assurance-item-content">
-                                    <h4>Elite Service Standard</h4>
-                                    <p>Direct access to senior partners and institutional-grade market intelligence reserved for our most valued clients</p>
+                                    <h4>Exclusive Access</h4>
+                                    <p>Accepted clients gain access to off-market opportunities, institutional intelligence, and white-glove advisory services</p>
                                 </div>
                             </div>
                             
                             <div class="assurance-item">
                                 <div class="assurance-item-icon">
-                                    <i class="fas fa-handshake"></i>
+                                    <i class="fas fa-award"></i>
                                 </div>
                                 <div class="assurance-item-content">
-                                    <h4>No Obligation Consultation</h4>
-                                    <p>Explore opportunities without commitment. Our initial consultation is complimentary and designed to understand your objectives</p>
+                                    <h4>Limited Roster</h4>
+                                    <p>We intentionally limit our client base to provide the personalized attention and bespoke solutions that define our service standard</p>
                                 </div>
                             </div>
                         </div>

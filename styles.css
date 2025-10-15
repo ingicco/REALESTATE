@@ -656,6 +656,23 @@ p {
         gap: var(--spacing-lg);
     }
     
+    /* Specialties grid on mobile */
+    .specialties-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .specialty-card {
+        height: 180px !important;
+        min-height: 180px !important;
+        max-height: 180px !important;
+    }
+    
+    .specialty-card:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+    
     .value-section .value-card {
         height: 180px !important; /* Shorter on mobile */
         min-height: 180px !important;
@@ -921,6 +938,52 @@ p {
 }
 
 /* ===== LUXURY BENEFITS SLIDER ===== */
+
+/* ===== SPECIALTIES SECTION ===== */
+
+.specialties-section {
+    padding: var(--spacing-2xl) 0 var(--spacing-xl) 0;
+    background: var(--color-bg-primary);
+}
+
+.specialties-section .section-subtitle {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    margin-top: var(--spacing-sm);
+    text-align: center;
+}
+
+.specialties-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-2xl);
+}
+
+.specialty-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 500px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.specialty-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Reuse value card styles */
+.specialty-card .card-image,
+.specialty-card .card-content,
+.specialty-card .card-text-content,
+.specialty-card .hover-content,
+.specialty-card .card-description,
+.specialty-card .learn-more-btn {
+    /* These will inherit from value card styles */
+}
 
 .luxury-benefits-section {
     padding: var(--spacing-2xl) 0 var(--spacing-xl) 0;
