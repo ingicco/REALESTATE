@@ -1404,8 +1404,14 @@ p {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     
+    /* Override scroll animations for mobile benefit cards */
+    .mobile-benefit-card.fade-in-up {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+    
     .mobile-benefit-card:active {
-        transform: scale(0.98);
+        transform: scale(0.98) !important;
     }
     
     .mobile-benefit-image {
