@@ -666,7 +666,22 @@ p {
     }
     
     .value-section .value-card {
-        height: 210px; /* 25% shorter on mobile */
+        height: 180px; /* Shorter on mobile */
+    }
+    
+    .card-text-content h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 480px) {
+    .value-section .value-card {
+        height: 160px; /* Even shorter on small mobile */
+    }
+    
+    .card-text-content h3 {
+        font-size: 1.4rem;
     }
 }
 
