@@ -666,22 +666,26 @@ p {
     }
     
     .value-section .value-card {
-        height: 180px; /* Shorter on mobile */
+        height: 180px !important; /* Shorter on mobile */
+        min-height: 180px !important;
+        max-height: 180px !important;
     }
     
     .card-text-content h3 {
-        font-size: 1.5rem;
-        font-weight: 700;
+        font-size: 1.5rem !important;
+        font-weight: 700 !important;
     }
 }
 
 @media (max-width: 480px) {
     .value-section .value-card {
-        height: 160px; /* Even shorter on small mobile */
+        height: 160px !important; /* Even shorter on small mobile */
+        min-height: 160px !important;
+        max-height: 160px !important;
     }
     
     .card-text-content h3 {
-        font-size: 1.4rem;
+        font-size: 1.4rem !important;
     }
 }
 
