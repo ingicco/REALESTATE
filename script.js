@@ -723,23 +723,23 @@ function openValueModal(cardNumber) {
     
     const valueData = {
         investment: {
-            title: "Cross-Border Investment Mastery",
+            title: "Asset Management Excellence",
             content: `
                 <div class="modal-intro">
-                    Navigate complex international regulations, tax implications, and market dynamics with institutional-grade expertise tailored for sophisticated global investors.
+                    Professional property management and optimization services designed to maximize returns, maintain asset value, and ensure seamless operations across your UAE real estate portfolio.
                 </div>
                 
                 <ul class="modal-benefits">
-                    <li>Multi-jurisdictional regulatory compliance and structuring optimization</li>
-                    <li>Cross-border tax treaty analysis and optimization strategies</li>
-                    <li>Currency hedging and foreign exchange risk management</li>
-                    <li>International due diligence and legal structuring guidance</li>
-                    <li>Coordination with your existing legal and tax advisory teams</li>
-                    <li>Access to <svg class="dirham-symbol" viewBox="0 0 345 300"><path d="M342 141l3 3v-8c0-17-12-31-27-31h-23C279 37 223 0 140 0H30s15 13 15 52v53H18c-5 0-10-2-15-6l-3-3v8c0 17 12 31 27 31h18v30H18c-5 0-10-2-15-6l-3-3v8c0 17 12 31 27 31h18v55c0 39-15 50-15 50h110c86 0 140-37 155-105h32c5 0 10 2 15 6l3 3v-8c0-17-12-31-27-31h-19c0-5 0-10 0-15s0-10-1-15h28c5 0 10 2 15 6zM90 15h46c62 0 97 27 108 90H90V15zm46 270H90v-90h154c-10 57-42 88-108 90zm111-135c0 5 0 10 0 15H90v-30h157c0 5 0 10 0 15z"/></svg>50M+ cross-border transactions facilitated</li>
+                    <li>Comprehensive tenant screening, placement, and relationship management</li>
+                    <li>Property maintenance coordination and quality control oversight</li>
+                    <li>Financial reporting with transparent accounting and tax documentation</li>
+                    <li>Strategic value enhancement and repositioning recommendations</li>
+                    <li>Rental optimization and market positioning analysis</li>
+                    <li>Managing <svg class="dirham-symbol" viewBox="0 0 345 300"><path d="M342 141l3 3v-8c0-17-12-31-27-31h-23C279 37 223 0 140 0H30s15 13 15 52v53H18c-5 0-10-2-15-6l-3-3v8c0 17 12 31 27 31h18v30H18c-5 0-10-2-15-6l-3-3v8c0 17 12 31 27 31h18v55c0 39-15 50-15 50h110c86 0 140-37 155-105h32c5 0 10 2 15 6l3 3v-8c0-17-12-31-27-31h-19c0-5 0-10 0-15s0-10-1-15h28c5 0 10 2 15 6zM90 15h46c62 0 97 27 108 90H90V15zm46 270H90v-90h154c-10 57-42 88-108 90zm111-135c0 5 0 10 0 15H90v-30h157c0 5 0 10 0 15z"/></svg>2B+ in UAE property assets under management</li>
                 </ul>
                 
                 <div class="modal-cta">
-                    <h4>Ready to Optimize Your Cross-Border Investment?</h4>
+                    <h4>Ready to Maximize Your Asset Performance?</h4>
                     <p>Schedule a confidential consultation with our specialists</p>
                     <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Secure Your Investment Strategy</a>
                 </div>
@@ -890,8 +890,8 @@ function closePrivacyModal() {
 function initLuxurySlider() {
     const slideData = [
         {
-            title: "Cross-Border Investment Mastery",
-            description: "<p><strong>The Challenge:</strong> Sophisticated investors and relocating families face regulatory complexities, tax optimization challenges, and information asymmetries that demand institutional-level expertise.</p><p><strong>Our Approach:</strong> Comprehensive due diligence combining legal structuring, tax optimization, and exclusive off-market access unavailable to retail buyers.</p>"
+            title: "Asset Management Excellence",
+            description: "<p><strong>The Challenge:</strong> Property owners need professional oversight to maximize returns, maintain asset value, and ensure seamless operations across their UAE portfolio.</p><p><strong>Our Approach:</strong> Institutional-grade property management including tenant relations, maintenance oversight, financial reporting, and strategic value enhancement initiatives.</p>"
         },
         {
             title: "Multi-Jurisdictional Tax Optimization",
