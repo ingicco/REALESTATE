@@ -1465,14 +1465,14 @@ p {
     }
     
     .mobile-benefit-description {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
         color: var(--color-text-secondary);
-        line-height: 1.6;
+        line-height: 1.5;
         text-align: center;
     }
     
     .mobile-benefit-description p {
-        margin-bottom: var(--spacing-sm);
+        margin-bottom: var(--spacing-xs);
     }
     
     .mobile-benefit-description p:last-child {
@@ -1482,6 +1482,7 @@ p {
     .mobile-benefit-description strong {
         color: var(--color-text-primary);
         font-weight: 600;
+        font-size: 0.75rem;
     }
 }
 
@@ -1502,8 +1503,13 @@ p {
     }
     
     .mobile-benefit-description {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         text-align: center;
+        line-height: 1.4;
+    }
+    
+    .mobile-benefit-description strong {
+        font-size: 0.7rem;
     }
 }
 
