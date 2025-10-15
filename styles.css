@@ -11,9 +11,9 @@
     /* Clean Webflow-Inspired Palette */
     --color-primary: #0d0d0d;           /* Deep black */
     --color-secondary: #333333;        /* Dark gray */
-    --color-accent: #5a6c57;           /* Green accent */
-    --color-accent-light: #6b7d68;     /* Light green */
-    --color-accent-dark: #4a5847;     /* Dark green */
+    --color-accent: #1a3a52;           /* Navy blue accent */
+    --color-accent-light: #2a4a62;     /* Light navy blue */
+    --color-accent-dark: #0f2a3f;     /* Dark navy blue */
     --color-text-primary: #0d0d0d;    /* Deep black */
     --color-text-secondary: #525866;   /* Medium gray */
     --color-text-light: #ffffff;       /* Pure white */
@@ -276,7 +276,7 @@ p {
     font-size: 1rem;
     font-weight: 500;
     border-radius: 8px;
-    background: #5a6c57;
+    background: #1a3a52;
     color: white;
     border: none;
     cursor: pointer;
@@ -285,7 +285,7 @@ p {
 }
 
 .hero-btn:hover {
-    background: #4a5847;
+    background: #0f2a3f;
     transform: translateY(-1px);
 }
 
@@ -1156,7 +1156,7 @@ p {
 
 /* Testimonials Section */
 .testimonials-section {
-    background: linear-gradient(135deg, #5a6c57 0%, #4a5847 100%);
+    background: linear-gradient(135deg, #1a3a52 0%, #0f2a3f 100%);
     padding: 120px 0;
     display: flex;
     align-items: center;
@@ -3424,11 +3424,11 @@ textarea:focus {
 .modal-cta {
     margin-top: 32px;
     padding: 32px;
-    background: linear-gradient(135deg, #5a6c57 0%, #4a5847 100%);
+    background: linear-gradient(135deg, #1a3a52 0%, #0f2a3f 100%);
     border-radius: 20px;
     text-align: center;
     border: none;
-    box-shadow: 0 8px 32px rgba(90, 108, 87, 0.2);
+    box-shadow: 0 8px 32px rgba(26, 58, 82, 0.2);
     position: relative;
     overflow: hidden;
 }
@@ -4377,7 +4377,7 @@ html {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--color-accent);
-    box-shadow: 0 0 0 3px rgba(90, 108, 87, 0.1);
+    box-shadow: 0 0 0 3px rgba(26, 58, 82, 0.1);
 }
 
 .form-group textarea {
@@ -4422,7 +4422,7 @@ html {
 
 .checkbox-label:hover input ~ .checkmark {
     border-color: var(--color-accent);
-    box-shadow: 0 0 0 3px rgba(90, 108, 87, 0.1);
+    box-shadow: 0 0 0 3px rgba(26, 58, 82, 0.1);
 }
 
 .checkbox-label input:checked ~ .checkmark {

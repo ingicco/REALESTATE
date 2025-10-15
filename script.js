@@ -1,4 +1,4 @@
-// ===== SOPHISTICATED WEBSITE FUNCTIONALITY =====
+// ===== SOPHISTICATED WEBSITE FUNCTIONALITY ===== v2.0
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize core functionality
@@ -726,22 +726,22 @@ function openValueModal(cardNumber) {
             title: "Asset Management Excellence",
             content: `
                 <div class="modal-intro">
-                    Professional property management and optimization services designed to maximize returns, maintain asset value, and ensure seamless operations across your UAE real estate portfolio.
+                    Our asset management division maintains a selective portfolio of premium properties, accepting only clients whose holdings meet our institutional standards. We deliver measurable alpha through active oversight rarely available outside family office structures.
                 </div>
                 
                 <ul class="modal-benefits">
-                    <li>Comprehensive tenant screening, placement, and relationship management</li>
-                    <li>Property maintenance coordination and quality control oversight</li>
-                    <li>Financial reporting with transparent accounting and tax documentation</li>
-                    <li>Strategic value enhancement and repositioning recommendations</li>
-                    <li>Rental optimization and market positioning analysis</li>
-                    <li>Managing <svg class="dirham-symbol" viewBox="0 0 345 300"><path d="M342 141l3 3v-8c0-17-12-31-27-31h-23C279 37 223 0 140 0H30s15 13 15 52v53H18c-5 0-10-2-15-6l-3-3v8c0 17 12 31 27 31h18v30H18c-5 0-10-2-15-6l-3-3v8c0 17 12 31 27 31h18v55c0 39-15 50-15 50h110c86 0 140-37 155-105h32c5 0 10 2 15 6l3 3v-8c0-17-12-31-27-31h-19c0-5 0-10 0-15s0-10-1-15h28c5 0 10 2 15 6zM90 15h46c62 0 97 27 108 90H90V15zm46 270H90v-90h154c-10 57-42 88-108 90zm111-135c0 5 0 10 0 15H90v-30h157c0 5 0 10 0 15z"/></svg>2B+ in UAE property assets under management</li>
+                    <li>Dedicated property oversight with quarterly performance reviews</li>
+                    <li>Vetted tenant placement from our institutional and UHNW network</li>
+                    <li>Proactive maintenance programs preserving trophy asset values</li>
+                    <li>White-glove coordination with your wealth management team</li>
+                    <li>Strategic repositioning and value enhancement advisory</li>
+                    <li>Minimum AED 5M in managed assets required for consideration</li>
                 </ul>
                 
                 <div class="modal-cta">
-                    <h4>Ready to Maximize Your Asset Performance?</h4>
-                    <p>Schedule a confidential consultation with our specialists</p>
-                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Secure Your Investment Strategy</a>
+                    <h4>Qualify for Our Asset Management</h4>
+                    <p>Limited availability · Application review required</p>
+                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Submit Application</a>
                 </div>
             `
         },
@@ -749,22 +749,22 @@ function openValueModal(cardNumber) {
             title: "Off-Market Opportunities",
             content: `
                 <div class="modal-intro">
-                    Gain exclusive access to premium Dubai properties before they reach the public market, giving you first-mover advantage on the city's most coveted real estate investments.
+                    We control access to Dubai's most coveted addresses before they reach public channels. Our developer relationships and UHNW seller network provide qualified clients with opportunities unavailable to the broader market.
                 </div>
                 
                 <ul class="modal-benefits">
-                    <li>Pre-launch access to exclusive developer allocations and prime units</li>
-                    <li>Private treaty sales from UHNW sellers seeking discreet transactions</li>
-                    <li>First look at trophy properties in Palm Jumeirah, Emirates Hills, and Downtown</li>
-                    <li>Privileged pricing and terms not available to retail market buyers</li>
-                    <li>Curated property selection matching your specific investment criteria</li>
-                    <li>Access to <svg class="dirham-symbol" viewBox="0 0 345 300"><path d="M342 141l3 3v-8c0-17-12-31-27-31h-23C279 37 223 0 140 0H30s15 13 15 52v53H18c-5 0-10-2-15-6l-3-3v8c0 17 12 31 27 31h18v30H18c-5 0-10-2-15-6l-3-3v8c0 17 12 31 27 31h18v55c0 39-15 50-15 50h110c86 0 140-37 155-105h32c5 0 10 2 15 6l3 3v-8c0-17-12-31-27-31h-19c0-5 0-10 0-15s0-10-1-15h28c5 0 10 2 15 6zM90 15h46c62 0 97 27 108 90H90V15zm46 270H90v-90h154c-10 57-42 88-108 90zm111-135c0 5 0 10 0 15H90v-30h157c0 5 0 10 0 15z"/></svg>500M+ in off-market inventory annually</li>
+                    <li>Pre-launch developer allocations in Palm Jumeirah, Emirates Hills, and Downtown</li>
+                    <li>Private treaty acquisitions from families seeking discrete disposition</li>
+                    <li>Trophy penthouses and villas presented exclusively to our roster</li>
+                    <li>Negotiated terms reflecting your relationship with our firm</li>
+                    <li>First review of opportunities matching your acquisition criteria</li>
+                    <li>Representing buyers of AED 10M+ transactions exclusively</li>
                 </ul>
                 
                 <div class="modal-cta">
-                    <h4>Ready to Access Exclusive Opportunities?</h4>
-                    <p>Connect with our off-market specialists for confidential listings</p>
-                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">View Private Inventory</a>
+                    <h4>Access Our Private Inventory</h4>
+                    <p>Qualified investors only · Confidential review process</p>
+                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Submit Application</a>
                 </div>
             `
         },
@@ -772,22 +772,22 @@ function openValueModal(cardNumber) {
             title: "Portfolio Strategy Integration",
             content: `
                 <div class="modal-intro">
-                    Integrate UAE properties seamlessly into your global portfolio with institutional-grade analysis and strategic asset allocation expertise.
+                    We position UAE real estate within sophisticated global portfolios, delivering institutional analysis typically reserved for endowments and family offices. Our integration approach requires existing portfolio complexity warranting this level of strategic oversight.
                 </div>
                 
                 <ul class="modal-benefits">
-                    <li>Strategic asset allocation analysis within your global portfolio</li>
-                    <li>Currency hedging and foreign exchange risk management</li>
-                    <li>Correlation analysis with your existing real estate holdings</li>
-                    <li>Risk-adjusted return optimization and diversification benefits</li>
-                    <li>Integration with your family office and wealth management team</li>
-                    <li>Enhanced portfolio returns: <svg class="dirham-symbol" viewBox="0 0 345 300"><path d="M342 141l3 3v-8c0-17-12-31-27-31h-23C279 37 223 0 140 0H30s15 13 15 52v53H18c-5 0-10-2-15-6l-3-3v8c0 17 12 31 27 31h18v30H18c-5 0-10-2-15-6l-3-3v8c0 17 12 31 27 31h18v55c0 39-15 50-15 50h110c86 0 140-37 155-105h32c5 0 10 2 15 6l3 3v-8c0-17-12-31-27-31h-19c0-5 0-10 0-15s0-10-1-15h28c5 0 10 2 15 6zM90 15h46c62 0 97 27 108 90H90V15zm46 270H90v-90h154c-10 57-42 88-108 90zm111-135c0 5 0 10 0 15H90v-30h157c0 5 0 10 0 15z"/></svg>12.3% average annual returns</li>
+                    <li>Strategic asset allocation modeling within multi-asset portfolios</li>
+                    <li>Currency exposure analysis and hedging recommendations</li>
+                    <li>Correlation optimization with existing real estate and alternative holdings</li>
+                    <li>Risk-adjusted return forecasting using proprietary market models</li>
+                    <li>Seamless coordination with your existing wealth advisory team</li>
+                    <li>Designed for portfolios exceeding AED 100M in total assets</li>
                 </ul>
                 
                 <div class="modal-cta">
-                    <h4>Ready to Optimize Your Portfolio Strategy?</h4>
-                    <p>Discover how UAE real estate can enhance your global investments</p>
-                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Maximize Portfolio Growth</a>
+                    <h4>Explore Portfolio Integration</h4>
+                    <p>For sophisticated investors · Preliminary review required</p>
+                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Submit Application</a>
                 </div>
             `
         },
@@ -796,22 +796,22 @@ function openValueModal(cardNumber) {
             title: "Asset Management Excellence",
             content: `
                 <div class="modal-intro">
-                    Institutional-grade property oversight delivering superior returns through active management, strategic positioning, and operational excellence across your UAE real estate portfolio.
+                    Our asset management division maintains a selective portfolio of premium properties, accepting only clients whose holdings meet our institutional standards. We deliver measurable alpha through active oversight rarely available outside family office structures.
                 </div>
                 
                 <ul class="modal-benefits">
-                    <li>Comprehensive tenant screening, placement, and relationship management</li>
-                    <li>Property maintenance coordination and quality control oversight</li>
-                    <li>Financial reporting with transparent accounting and tax documentation</li>
-                    <li>Strategic value enhancement and repositioning recommendations</li>
-                    <li>Rental optimization and market positioning analysis</li>
-                    <li>Managing AED 2B+ in UAE property assets under management</li>
+                    <li>Dedicated property oversight with quarterly performance reviews</li>
+                    <li>Vetted tenant placement from our institutional and UHNW network</li>
+                    <li>Proactive maintenance programs preserving trophy asset values</li>
+                    <li>White-glove coordination with your wealth management team</li>
+                    <li>Strategic repositioning and value enhancement advisory</li>
+                    <li>Minimum AED 5M in managed assets required for consideration</li>
                 </ul>
                 
                 <div class="modal-cta">
-                    <h4>Interested in Our Asset Management Services?</h4>
-                    <p>Submit your application for review by our partners</p>
-                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Apply Now</a>
+                    <h4>Qualify for Our Asset Management</h4>
+                    <p>Limited availability · Application review required</p>
+                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Submit Application</a>
                 </div>
             `
         },
@@ -819,22 +819,22 @@ function openValueModal(cardNumber) {
             title: "Off-Market Opportunities",
             content: `
                 <div class="modal-intro">
-                    Privileged access to Dubai's most exclusive properties before public listing, secured through our established developer relationships and UHNW seller network.
+                    We control access to Dubai's most coveted addresses before they reach public channels. Our developer relationships and UHNW seller network provide qualified clients with opportunities unavailable to the broader market.
                 </div>
                 
                 <ul class="modal-benefits">
-                    <li>Pre-launch access to exclusive developer allocations and prime units</li>
-                    <li>Private treaty sales from UHNW sellers seeking discreet transactions</li>
-                    <li>First look at trophy properties in Palm Jumeirah, Emirates Hills, and Downtown</li>
-                    <li>Privileged pricing and terms not available to retail market buyers</li>
-                    <li>Curated property selection matching your specific investment criteria</li>
-                    <li>Access to AED 500M+ in off-market inventory annually</li>
+                    <li>Pre-launch developer allocations in Palm Jumeirah, Emirates Hills, and Downtown</li>
+                    <li>Private treaty acquisitions from families seeking discrete disposition</li>
+                    <li>Trophy penthouses and villas presented exclusively to our roster</li>
+                    <li>Negotiated terms reflecting your relationship with our firm</li>
+                    <li>First review of opportunities matching your acquisition criteria</li>
+                    <li>Representing buyers of AED 10M+ transactions exclusively</li>
                 </ul>
                 
                 <div class="modal-cta">
-                    <h4>Request Access to Off-Market Listings</h4>
-                    <p>Submit your application to view our exclusive inventory</p>
-                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Apply Now</a>
+                    <h4>Access Our Private Inventory</h4>
+                    <p>Qualified investors only · Confidential review process</p>
+                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Submit Application</a>
                 </div>
             `
         },
@@ -842,22 +842,22 @@ function openValueModal(cardNumber) {
             title: "Market Intelligence & Research",
             content: `
                 <div class="modal-intro">
-                    Proprietary research, institutional-grade data analytics, and market timing intelligence unavailable through public channels or retail advisory firms.
+                    Our research division maintains proprietary databases and analytical models unavailable through public channels. Intelligence access is restricted to clients whose investment approach warrants institutional-grade market insights.
                 </div>
                 
                 <ul class="modal-benefits">
-                    <li>Exclusive access to pre-market transaction data and developer pipeline information</li>
-                    <li>Proprietary pricing models and neighborhood-level market analysis</li>
-                    <li>Macro-economic research tailored to UAE real estate implications</li>
-                    <li>Investment timing optimization through predictive market analytics</li>
-                    <li>Competitive intelligence on institutional buyer and developer activity</li>
-                    <li>Weekly market intelligence reports delivered to select clients</li>
+                    <li>Pre-market transaction visibility through our developer partnerships</li>
+                    <li>Proprietary valuation models incorporating off-market comparable data</li>
+                    <li>Quarterly macro briefings on regulatory and economic implications</li>
+                    <li>Neighborhood-level supply pipeline analysis for timing optimization</li>
+                    <li>Competitive intelligence on institutional capital flows and positioning</li>
+                    <li>Reserved for clients with AED 25M+ in UAE real estate exposure</li>
                 </ul>
                 
                 <div class="modal-cta">
-                    <h4>Access Our Market Intelligence</h4>
-                    <p>Apply for access to our proprietary research platform</p>
-                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Apply Now</a>
+                    <h4>Request Intelligence Access</h4>
+                    <p>Restricted to qualified portfolio holders · Vetting required</p>
+                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Submit Application</a>
                 </div>
             `
         },
@@ -865,22 +865,22 @@ function openValueModal(cardNumber) {
             title: "Liquidity & Exit Planning",
             content: `
                 <div class="modal-intro">
-                    Strategic exit planning ensuring optimal disposal timing, institutional buyer access, and tax-efficient transaction structuring for maximum net proceeds.
+                    When discrete disposition is required, we orchestrate off-market transactions to qualified counterparties within our network. Our exit execution preserves confidentiality while maximizing realized value through strategic positioning.
                 </div>
                 
                 <ul class="modal-benefits">
-                    <li>Institutional buyer network for expedited, off-market disposals</li>
-                    <li>Market timing optimization for disposal execution</li>
-                    <li>Tax-efficient exit structuring with international tax coordination</li>
-                    <li>Confidential marketing to qualified UHNW and institutional buyers</li>
-                    <li>1031 exchange and like-kind exchange structuring expertise</li>
-                    <li>Average exit premium of 8-12% above market comparables</li>
+                    <li>Private treaty negotiations with vetted institutional and family office buyers</li>
+                    <li>Pre-sale repositioning and enhancement strategy to maximize valuation</li>
+                    <li>Coordinated timing with your tax and wealth advisory teams</li>
+                    <li>Discrete marketing ensuring zero public market exposure</li>
+                    <li>Transaction structuring optimized for your specific objectives</li>
+                    <li>Minimum AED 15M transaction size for representation</li>
                 </ul>
                 
                 <div class="modal-cta">
-                    <h4>Plan Your Strategic Exit</h4>
-                    <p>Discuss your liquidity requirements with our advisors</p>
-                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Apply Now</a>
+                    <h4>Discuss Strategic Exit</h4>
+                    <p>Confidential consultation · Qualified sellers only</p>
+                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Submit Application</a>
                 </div>
             `
         },
@@ -888,26 +888,32 @@ function openValueModal(cardNumber) {
             title: "Relocation & Residency Services",
             content: `
                 <div class="modal-intro">
-                    White-glove relocation coordination for UHNW families, encompassing residency planning, lifestyle integration, and complete concierge-level support.
+                    Our relocation practice serves select families transitioning significant wealth into the UAE. We coordinate every aspect of establishment—from residency structures to lifestyle integration—with the discretion and precision expected at this level.
                 </div>
                 
                 <ul class="modal-benefits">
-                    <li>Golden Visa facilitation and residency planning for investors and families</li>
-                    <li>Banking relationship introductions with premier private banking institutions</li>
-                    <li>Elite school placement and education advisory services</li>
-                    <li>Healthcare concierge and premium medical facility access</li>
-                    <li>Lifestyle integration including club memberships and social introductions</li>
-                    <li>Ongoing concierge services for seamless UAE lifestyle transition</li>
+                    <li>Golden Visa and optimal residency pathway structuring</li>
+                    <li>Private school placement at Dubai's most selective institutions</li>
+                    <li>Premier private banking and wealth management introductions</li>
+                    <li>Exclusive club memberships and lifestyle integration</li>
+                    <li>Family office establishment and operational infrastructure</li>
+                    <li>Reserved for families relocating AED 50M+ in investable assets</li>
                 </ul>
                 
                 <div class="modal-cta">
-                    <h4>Begin Your UAE Relocation</h4>
-                    <p>Apply for our comprehensive relocation services</p>
-                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Apply Now</a>
+                    <h4>Initiate Relocation Planning</h4>
+                    <p>For qualified families only · Confidential vetting process</p>
+                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Submit Application</a>
                 </div>
             `
         }
     };
+    
+    if (!valueData[cardNumber]) {
+        console.error('No data found for card:', cardNumber);
+        console.log('Available cards:', Object.keys(valueData));
+        return;
+    }
     
     modalTitle.textContent = valueData[cardNumber].title;
     modalContent.innerHTML = valueData[cardNumber].content;
