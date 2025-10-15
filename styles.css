@@ -669,11 +669,29 @@ p {
         height: 180px !important; /* Shorter on mobile */
         min-height: 180px !important;
         max-height: 180px !important;
+        cursor: pointer;
     }
     
     .card-text-content h3 {
         font-size: 1.5rem !important;
         font-weight: 700 !important;
+    }
+    
+    /* Always show learn more button on mobile */
+    .hover-content {
+        opacity: 1 !important;
+        max-height: none !important;
+    }
+    
+    /* Hide description on mobile to save space, only show button */
+    .card-description {
+        display: none;
+    }
+    
+    .learn-more-btn {
+        display: inline-block !important;
+        opacity: 1 !important;
+        margin-top: 8px;
     }
 }
 
@@ -686,6 +704,11 @@ p {
     
     .card-text-content h3 {
         font-size: 1.4rem !important;
+    }
+    
+    .learn-more-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
     }
 }
 
