@@ -46,10 +46,23 @@
 
 /* ===== RESET & BASE STYLES ===== */
 
+/* Prevent horizontal scroll on mobile */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Ensure all major containers don't overflow */
+section, .container, .hero-grid, .image-grid {
+    max-width: 100%;
 }
 
 html {
