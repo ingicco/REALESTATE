@@ -790,6 +790,122 @@ function openValueModal(cardNumber) {
                     <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Maximize Portfolio Growth</a>
                 </div>
             `
+        },
+        // Aliases for specialty cards
+        'asset-management': {
+            title: "Asset Management Excellence",
+            content: `
+                <div class="modal-intro">
+                    Institutional-grade property oversight delivering superior returns through active management, strategic positioning, and operational excellence across your UAE real estate portfolio.
+                </div>
+                
+                <ul class="modal-benefits">
+                    <li>Comprehensive tenant screening, placement, and relationship management</li>
+                    <li>Property maintenance coordination and quality control oversight</li>
+                    <li>Financial reporting with transparent accounting and tax documentation</li>
+                    <li>Strategic value enhancement and repositioning recommendations</li>
+                    <li>Rental optimization and market positioning analysis</li>
+                    <li>Managing AED 2B+ in UAE property assets under management</li>
+                </ul>
+                
+                <div class="modal-cta">
+                    <h4>Interested in Our Asset Management Services?</h4>
+                    <p>Submit your application for review by our partners</p>
+                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Apply Now</a>
+                </div>
+            `
+        },
+        'off-market': {
+            title: "Off-Market Opportunities",
+            content: `
+                <div class="modal-intro">
+                    Privileged access to Dubai's most exclusive properties before public listing, secured through our established developer relationships and UHNW seller network.
+                </div>
+                
+                <ul class="modal-benefits">
+                    <li>Pre-launch access to exclusive developer allocations and prime units</li>
+                    <li>Private treaty sales from UHNW sellers seeking discreet transactions</li>
+                    <li>First look at trophy properties in Palm Jumeirah, Emirates Hills, and Downtown</li>
+                    <li>Privileged pricing and terms not available to retail market buyers</li>
+                    <li>Curated property selection matching your specific investment criteria</li>
+                    <li>Access to AED 500M+ in off-market inventory annually</li>
+                </ul>
+                
+                <div class="modal-cta">
+                    <h4>Request Access to Off-Market Listings</h4>
+                    <p>Submit your application to view our exclusive inventory</p>
+                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Apply Now</a>
+                </div>
+            `
+        },
+        'intelligence': {
+            title: "Market Intelligence & Research",
+            content: `
+                <div class="modal-intro">
+                    Proprietary research, institutional-grade data analytics, and market timing intelligence unavailable through public channels or retail advisory firms.
+                </div>
+                
+                <ul class="modal-benefits">
+                    <li>Exclusive access to pre-market transaction data and developer pipeline information</li>
+                    <li>Proprietary pricing models and neighborhood-level market analysis</li>
+                    <li>Macro-economic research tailored to UAE real estate implications</li>
+                    <li>Investment timing optimization through predictive market analytics</li>
+                    <li>Competitive intelligence on institutional buyer and developer activity</li>
+                    <li>Weekly market intelligence reports delivered to select clients</li>
+                </ul>
+                
+                <div class="modal-cta">
+                    <h4>Access Our Market Intelligence</h4>
+                    <p>Apply for access to our proprietary research platform</p>
+                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Apply Now</a>
+                </div>
+            `
+        },
+        'liquidity': {
+            title: "Liquidity & Exit Planning",
+            content: `
+                <div class="modal-intro">
+                    Strategic exit planning ensuring optimal disposal timing, institutional buyer access, and tax-efficient transaction structuring for maximum net proceeds.
+                </div>
+                
+                <ul class="modal-benefits">
+                    <li>Institutional buyer network for expedited, off-market disposals</li>
+                    <li>Market timing optimization for disposal execution</li>
+                    <li>Tax-efficient exit structuring with international tax coordination</li>
+                    <li>Confidential marketing to qualified UHNW and institutional buyers</li>
+                    <li>1031 exchange and like-kind exchange structuring expertise</li>
+                    <li>Average exit premium of 8-12% above market comparables</li>
+                </ul>
+                
+                <div class="modal-cta">
+                    <h4>Plan Your Strategic Exit</h4>
+                    <p>Discuss your liquidity requirements with our advisors</p>
+                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Apply Now</a>
+                </div>
+            `
+        },
+        'relocation': {
+            title: "Relocation & Residency Services",
+            content: `
+                <div class="modal-intro">
+                    White-glove relocation coordination for UHNW families, encompassing residency planning, lifestyle integration, and complete concierge-level support.
+                </div>
+                
+                <ul class="modal-benefits">
+                    <li>Golden Visa facilitation and residency planning for investors and families</li>
+                    <li>Banking relationship introductions with premier private banking institutions</li>
+                    <li>Elite school placement and education advisory services</li>
+                    <li>Healthcare concierge and premium medical facility access</li>
+                    <li>Lifestyle integration including club memberships and social introductions</li>
+                    <li>Ongoing concierge services for seamless UAE lifestyle transition</li>
+                </ul>
+                
+                <div class="modal-cta">
+                    <h4>Begin Your UAE Relocation</h4>
+                    <p>Apply for our comprehensive relocation services</p>
+                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Apply Now</a>
+                </div>
+            `
         }
     };
     
@@ -806,6 +922,11 @@ function closeValueModal() {
         modal.style.display = 'none';
         document.body.style.overflow = 'auto';
     }
+}
+
+// Alias for specialty modals (uses same modal system)
+function openSpecialtyModal(cardId) {
+    openValueModal(cardId);
 }
 
 function scrollToContact() {
