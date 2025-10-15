@@ -352,7 +352,7 @@ p {
         min-height: 100vh;
         display: flex;
         align-items: flex-start;
-        padding-top: calc(var(--spacing-md) + 20px);
+        padding-top: var(--spacing-sm);
     }
     
     .hero .container {
@@ -424,7 +424,7 @@ p {
 @media (max-width: 480px) {
     .hero {
         min-height: 100vh;
-        padding-top: var(--spacing-md);
+        padding-top: var(--spacing-xs);
         align-items: flex-start;
     }
     
