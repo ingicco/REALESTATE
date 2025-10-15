@@ -214,17 +214,6 @@ p {
     position: relative;
 }
 
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 2px;
-    background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
-}
-
 .section-subtitle {
     font-size: 1.2rem;
     color: var(--color-text-secondary);
@@ -1492,6 +1481,10 @@ p {
 }
 
 @media (max-width: 480px) {
+    .luxury-benefits-section .section-title {
+        font-size: 1.4rem;
+    }
+    
     .luxury-benefits-section .section-subtitle {
         font-size: 0.85rem;
     }
@@ -3110,7 +3103,7 @@ p {
     }
     
     .section-title {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     
     .testimonial-text blockquote {
