@@ -349,7 +349,7 @@ p {
         gap: var(--spacing-2xl);
         text-align: center;
         padding: 0 var(--spacing-md);
-        margin-left: -8px;
+        margin: 0;
     }
     
     .hero-content {
@@ -363,6 +363,9 @@ p {
         order: 1;
         text-align: center;
         padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .image-grid {
@@ -399,7 +402,7 @@ p {
     
     .hero-grid {
         padding: 0 var(--spacing-sm);
-        margin-left: -6px;
+        margin: 0;
     }
     
     .hero-content {
@@ -408,6 +411,9 @@ p {
     
     .hero-images {
         padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .image-grid {
