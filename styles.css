@@ -1919,7 +1919,7 @@ p {
     }
     
     .benefits-cta h3 {
-        font-size: clamp(2.5rem, 6vw, 3.5rem);
+        font-size: 1.6rem;
     }
     
     .benefits-cta .btn {
