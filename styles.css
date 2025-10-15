@@ -905,6 +905,11 @@ p {
     background: var(--color-background-primary);
 }
 
+/* Hide mobile benefits stack on desktop */
+.mobile-benefits-stack {
+    display: none;
+}
+
 .luxury-slider {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1364,58 +1369,98 @@ p {
         padding: var(--spacing-xl) 0 var(--spacing-md) 0;
     }
     
+    /* Hide slider functionality on mobile */
     .luxury-slider {
-        display: flex;
-        flex-direction: column;
-        gap: var(--spacing-xs);
+        display: block;
+    }
+    
+    .slider-navigation,
+    .slide-indicators {
+        display: none !important;
+    }
+    
+    /* Show all slides stacked on mobile */
+    .slider-content {
+        display: none; /* Hide single slide container */
     }
     
     .slider-images {
-        height: 260px;
-        min-height: 260px;
-        order: 1;
+        display: none; /* Hide slider images */
     }
     
-    .slider-content {
+    /* Create stacked mobile benefit cards */
+    .luxury-benefits-section .mobile-benefits-stack {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-lg);
+        margin-top: var(--spacing-lg);
+    }
+    
+    .mobile-benefit-card {
+        background: white;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .mobile-benefit-card:active {
+        transform: scale(0.98);
+    }
+    
+    .mobile-benefit-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .mobile-benefit-content {
         padding: var(--spacing-md);
-        order: 2;
     }
     
-    .slider-navigation {
-        order: 3;
-        justify-content: center;
-        margin: var(--spacing-sm) 0;
+    .mobile-benefit-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-text-primary);
+        margin-bottom: var(--spacing-sm);
+        line-height: 1.2;
     }
     
-    .slide-title {
-        font-size: 2.8rem;
+    .mobile-benefit-description {
+        font-size: 0.95rem;
+        color: var(--color-text-secondary);
+        line-height: 1.6;
+    }
+    
+    .mobile-benefit-description p {
         margin-bottom: var(--spacing-sm);
     }
     
-    .slide-description {
-        font-size: 1.1rem;
+    .mobile-benefit-description p:last-child {
+        margin-bottom: 0;
     }
     
-    .nav-btn {
-        width: 40px;
-        height: 40px;
+    .mobile-benefit-description strong {
+        color: var(--color-text-primary);
+        font-weight: 600;
     }
-    
-    /* OLD MOBILE BENEFITS CTA REMOVED */
 }
 
 @media (max-width: 480px) {
-    .slider-images {
-        height: 220px;
-        min-height: 220px;
+    .mobile-benefit-image {
+        height: 180px;
     }
     
-    .slide-title {
-        font-size: 2.2rem;
+    .mobile-benefit-content {
+        padding: var(--spacing-sm);
     }
     
-    .slide-description {
-        font-size: 1rem;
+    .mobile-benefit-title {
+        font-size: 1.3rem;
+    }
+    
+    .mobile-benefit-description {
+        font-size: 0.9rem;
     }
 }
 
