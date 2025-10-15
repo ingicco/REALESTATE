@@ -143,21 +143,25 @@ function initFloatingContact() {
     }
 }
 
-// Enhanced Scroll Animations
+// Enhanced Scroll Animations with Continuous Effects
 function initScrollAnimations() {
-    console.log('Initializing enhanced scroll animations');
+    console.log('Initializing enhanced continuous scroll animations');
     
     const observerOptions = {
-        threshold: 0.15,
-        rootMargin: '0px 0px -100px 0px'
+        threshold: 0.2,
+        rootMargin: '0px 0px -80px 0px'
     };
     
+    // Continuous animation observer - animates both ways
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
+                // Add animated class when element enters viewport
                 entry.target.classList.add('animated');
-                // Optional: Unobserve after animation to improve performance
-                // observer.unobserve(entry.target);
+            } else {
+                // Remove animated class when element leaves viewport
+                // This makes the animation trigger again when scrolling back
+                entry.target.classList.remove('animated');
             }
         });
     }, observerOptions);
