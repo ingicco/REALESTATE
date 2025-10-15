@@ -48,7 +48,7 @@
     <section id="value" class="value-section">
         <div class="container">
             <div class="value-cards-grid">
-                <div class="value-card">
+                <div class="value-card" onclick="openValueModal('investment')">
                     <div class="card-image">
                         <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Cross-Border Investment" loading="lazy">
                     </div>
@@ -57,13 +57,13 @@
                             <h3>Cross-Border Investment</h3>
                             <div class="hover-content">
                                 <p class="card-description">Navigate complex international regulations and tax implications with expert guidance tailored for sophisticated global investors.</p>
-                                <button class="learn-more-btn" onclick="openValueModal('investment')">Learn more →</button>
+                                <button class="learn-more-btn" onclick="event.stopPropagation(); openValueModal('investment')">Learn more →</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="value-card">
+                <div class="value-card" onclick="openValueModal('tax')">
                     <div class="card-image">
                         <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Tax Optimization" loading="lazy">
                     </div>
@@ -72,13 +72,13 @@
                             <h3>Tax Optimization</h3>
                             <div class="hover-content">
                                 <p class="card-description">Maximize your investment returns through strategic tax planning and UAE's favorable regulatory environment for international investors.</p>
-                                <button class="learn-more-btn" onclick="openValueModal('tax')">Learn more →</button>
+                                <button class="learn-more-btn" onclick="event.stopPropagation(); openValueModal('tax')">Learn more →</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="value-card">
+                <div class="value-card" onclick="openValueModal('portfolio')">
                     <div class="card-image">
                         <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Portfolio Strategy" loading="lazy">
                     </div>
@@ -87,7 +87,7 @@
                             <h3>Portfolio Strategy</h3>
                             <div class="hover-content">
                                 <p class="card-description">Integrate UAE properties seamlessly into your global portfolio with institutional-grade analysis and strategic asset allocation.</p>
-                                <button class="learn-more-btn" onclick="openValueModal('portfolio')">Learn more →</button>
+                                <button class="learn-more-btn" onclick="event.stopPropagation(); openValueModal('portfolio')">Learn more →</button>
                             </div>
                         </div>
                     </div>

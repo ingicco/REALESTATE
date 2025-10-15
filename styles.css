@@ -677,21 +677,15 @@ p {
         font-weight: 700 !important;
     }
     
-    /* Always show learn more button on mobile */
+    /* Hide all hover content on mobile - card will be clickable */
     .hover-content {
-        opacity: 1 !important;
-        max-height: none !important;
+        display: none !important;
     }
     
-    /* Hide description on mobile to save space, only show button */
-    .card-description {
-        display: none;
-    }
-    
-    .learn-more-btn {
-        display: inline-block !important;
-        opacity: 1 !important;
-        margin-top: 8px;
+    /* Add tap indicator on mobile */
+    .value-section .value-card:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
     }
 }
 
@@ -704,11 +698,6 @@ p {
     
     .card-text-content h3 {
         font-size: 1.4rem !important;
-    }
-    
-    .learn-more-btn {
-        font-size: 0.9rem;
-        padding: 8px 16px;
     }
 }
 
