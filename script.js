@@ -158,6 +158,7 @@ function initScrollAnimations() {
             if (entry.isIntersecting) {
                 // Add animated class when element enters viewport
                 entry.target.classList.add('animated');
+                console.log('Animating element:', entry.target.classList);
             } else {
                 // Remove animated class when element leaves viewport
                 // This makes the animation trigger again when scrolling back
@@ -179,6 +180,7 @@ function initScrollAnimations() {
         .testimonial-content,
         .benefits-cta
     `);
+    console.log(`Found ${fadeUpElements.length} fade-up elements (including ${document.querySelectorAll('.value-card').length} value cards)`);
     fadeUpElements.forEach((el, index) => {
         el.classList.add('fade-in-up');
         if (index > 0 && index < 6) {
@@ -187,9 +189,8 @@ function initScrollAnimations() {
         observer.observe(el);
     });
     
-    // Fade in from left - for text content
+    // Fade in from left - for text content (excluding hero)
     const fadeLeftElements = document.querySelectorAll(`
-        .hero-content,
         .slider-content,
         .services-header,
         .faq-header,
@@ -200,9 +201,8 @@ function initScrollAnimations() {
         observer.observe(el);
     });
     
-    // Fade in from right - for images
+    // Fade in from right - for images (excluding hero)
     const fadeRightElements = document.querySelectorAll(`
-        .hero-images,
         .slider-images,
         .services-sidebar,
         .mobile-sidebar
