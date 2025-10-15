@@ -379,6 +379,8 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        justify-self: center;
     }
     
     .image-grid {
@@ -388,7 +390,7 @@ p {
         width: 446px;
         height: 316px;
         margin: 0 auto;
-        display: inline-grid;
+        display: grid;
     }
     
     .hero-title {
@@ -427,6 +429,8 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        justify-self: center;
     }
     
     .image-grid {
@@ -436,7 +440,7 @@ p {
         grid-template-rows: 120px 80px;
         gap: 12px;
         margin: 0 auto;
-        display: inline-grid;
+        display: grid;
     }
     
     .hero-title {
