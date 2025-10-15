@@ -348,10 +348,11 @@ p {
 /* Hero Mobile Responsive */
 @media (max-width: 768px) {
     .hero {
-        padding: var(--spacing-md) 0;
+        padding: var(--spacing-sm) 0 var(--spacing-md) 0;
         min-height: 100vh;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        padding-top: calc(var(--spacing-md) + 20px);
     }
     
     .hero .container {
@@ -423,6 +424,8 @@ p {
 @media (max-width: 480px) {
     .hero {
         min-height: 100vh;
+        padding-top: var(--spacing-md);
+        align-items: flex-start;
     }
     
     .hero .container {
