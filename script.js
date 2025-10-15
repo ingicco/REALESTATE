@@ -746,25 +746,25 @@ function openValueModal(cardNumber) {
             `
         },
         tax: {
-            title: "Tax Optimization Strategy",
+            title: "Off-Market Opportunities",
             content: `
                 <div class="modal-intro">
-                    Maximize your investment returns through strategic tax planning and UAE's favorable regulatory environment designed for international investors.
+                    Gain exclusive access to premium Dubai properties before they reach the public market, giving you first-mover advantage on the city's most coveted real estate investments.
                 </div>
                 
                 <ul class="modal-benefits">
-                    <li>Zero personal income tax on UAE property investments</li>
-                    <li>Strategic structuring to minimize global tax exposure</li>
-                    <li>Double taxation treaty optimization across 140+ countries</li>
-                    <li>Golden Visa residency planning for tax efficiency</li>
-                    <li>Estate planning and wealth transfer optimization</li>
-                    <li>Save up to <svg class="dirham-symbol" viewBox="0 0 345 300"><path d="M342 141l3 3v-8c0-17-12-31-27-31h-23C279 37 223 0 140 0H30s15 13 15 52v53H18c-5 0-10-2-15-6l-3-3v8c0 17 12 31 27 31h18v30H18c-5 0-10-2-15-6l-3-3v8c0 17 12 31 27 31h18v55c0 39-15 50-15 50h110c86 0 140-37 155-105h32c5 0 10 2 15 6l3 3v-8c0-17-12-31-27-31h-19c0-5 0-10 0-15s0-10-1-15h28c5 0 10 2 15 6zM90 15h46c62 0 97 27 108 90H90V15zm46 270H90v-90h154c-10 57-42 88-108 90zm111-135c0 5 0 10 0 15H90v-30h157c0 5 0 10 0 15z"/></svg>15M annually in tax optimization</li>
+                    <li>Pre-launch access to exclusive developer allocations and prime units</li>
+                    <li>Private treaty sales from UHNW sellers seeking discreet transactions</li>
+                    <li>First look at trophy properties in Palm Jumeirah, Emirates Hills, and Downtown</li>
+                    <li>Privileged pricing and terms not available to retail market buyers</li>
+                    <li>Curated property selection matching your specific investment criteria</li>
+                    <li>Access to <svg class="dirham-symbol" viewBox="0 0 345 300"><path d="M342 141l3 3v-8c0-17-12-31-27-31h-23C279 37 223 0 140 0H30s15 13 15 52v53H18c-5 0-10-2-15-6l-3-3v8c0 17 12 31 27 31h18v30H18c-5 0-10-2-15-6l-3-3v8c0 17 12 31 27 31h18v55c0 39-15 50-15 50h110c86 0 140-37 155-105h32c5 0 10 2 15 6l3 3v-8c0-17-12-31-27-31h-19c0-5 0-10 0-15s0-10-1-15h28c5 0 10 2 15 6zM90 15h46c62 0 97 27 108 90H90V15zm46 270H90v-90h154c-10 57-42 88-108 90zm111-135c0 5 0 10 0 15H90v-30h157c0 5 0 10 0 15z"/></svg>500M+ in off-market inventory annually</li>
                 </ul>
                 
                 <div class="modal-cta">
-                    <h4>Ready to Optimize Your Tax Strategy?</h4>
-                    <p>Discover how UAE investment can enhance your global tax position</p>
-                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">Unlock Tax-Free Returns</a>
+                    <h4>Ready to Access Exclusive Opportunities?</h4>
+                    <p>Connect with our off-market specialists for confidential listings</p>
+                    <a href="#contact" class="modal-cta-button" onclick="closeValueModal(); scrollToContact();">View Private Inventory</a>
                 </div>
             `
         },
@@ -894,8 +894,8 @@ function initLuxurySlider() {
             description: "<p><strong>The Challenge:</strong> Property owners need professional oversight to maximize returns, maintain asset value, and ensure seamless operations across their UAE portfolio.</p><p><strong>Our Approach:</strong> Institutional-grade property management including tenant relations, maintenance oversight, financial reporting, and strategic value enhancement initiatives.</p>"
         },
         {
-            title: "Multi-Jurisdictional Tax Optimization",
-            description: "<p><strong>The Challenge:</strong> UAE property ownership involves complex tax treaties, reporting requirements, and structuring decisions that can significantly impact your global tax position.</p><p><strong>Our Approach:</strong> Coordinated structuring with your existing advisors to maximize tax efficiency while ensuring full compliance across all jurisdictions.</p>"
+            title: "Off-Market Opportunities",
+            description: "<p><strong>The Challenge:</strong> The best properties in Dubai sell before reaching public listings, requiring insider access and relationships to secure premium opportunities.</p><p><strong>Our Approach:</strong> Exclusive access to pre-launch developments, private treaty sales, and trophy properties through our network of developers and UHNW sellers.</p>"
         },
         {
             title: "Strategic Portfolio Integration",
