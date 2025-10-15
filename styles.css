@@ -347,7 +347,7 @@ p {
     .hero .container {
         padding: 0;
         text-align: center;
-        padding-top: var(--spacing-xs);
+        padding-top: 6px;
     }
     
     .hero-grid {
@@ -420,7 +420,7 @@ p {
     
     .hero .container {
         padding: 0;
-        padding-top: 8px;
+        padding-top: 6px;
     }
     
     .hero-grid {
