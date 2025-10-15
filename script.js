@@ -143,29 +143,117 @@ function initFloatingContact() {
     }
 }
 
-// Scroll Animations
+// Enhanced Scroll Animations
 function initScrollAnimations() {
+    console.log('Initializing enhanced scroll animations');
+    
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.15,
+        rootMargin: '0px 0px -100px 0px'
     };
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('animated');
+                // Optional: Unobserve after animation to improve performance
+                // observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
     
-    // Observe elements for animation
-    const animatedElements = document.querySelectorAll('.service-card, .property-card, .advantage-item');
-    animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    // Animate different element types with different effects
+    
+    // Fade in from bottom - for cards and content blocks
+    const fadeUpElements = document.querySelectorAll(`
+        .value-card,
+        .services-column,
+        .service-text,
+        .faq-item,
+        .contact-form-container,
+        .contact-assurance,
+        .testimonial-content,
+        .benefits-cta
+    `);
+    fadeUpElements.forEach((el, index) => {
+        el.classList.add('fade-in-up');
+        if (index > 0 && index < 6) {
+            el.classList.add(`stagger-${index}`);
+        }
         observer.observe(el);
+    });
+    
+    // Fade in from left - for text content
+    const fadeLeftElements = document.querySelectorAll(`
+        .hero-content,
+        .slider-content,
+        .services-header,
+        .faq-header,
+        .contact-header
+    `);
+    fadeLeftElements.forEach(el => {
+        el.classList.add('fade-in-left', 'dramatic-animation');
+        observer.observe(el);
+    });
+    
+    // Fade in from right - for images
+    const fadeRightElements = document.querySelectorAll(`
+        .hero-images,
+        .slider-images,
+        .services-sidebar,
+        .mobile-sidebar
+    `);
+    fadeRightElements.forEach(el => {
+        el.classList.add('fade-in-right', 'dramatic-animation');
+        observer.observe(el);
+    });
+    
+    // Scale in - for special elements
+    const scaleElements = document.querySelectorAll(`
+        .mobile-service-item img,
+        .services-column img,
+        .image-item img
+    `);
+    scaleElements.forEach((el, index) => {
+        el.classList.add('scale-in');
+        if (index < 6) {
+            el.classList.add(`stagger-${(index % 3) + 1}`);
+        }
+        observer.observe(el);
+    });
+    
+    // Parallax effect on scroll
+    initParallaxEffect();
+    
+    console.log(`Observing ${fadeUpElements.length + fadeLeftElements.length + fadeRightElements.length + scaleElements.length} elements for animation`);
+}
+
+// Parallax scrolling effect for images
+function initParallaxEffect() {
+    const parallaxElements = document.querySelectorAll('.slider-images img, .hero-images img');
+    
+    if (parallaxElements.length === 0) return;
+    
+    let ticking = false;
+    
+    function updateParallax() {
+        parallaxElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            const scrolled = window.pageYOffset;
+            const rate = rect.top * 0.05; // Adjust this for more/less parallax
+            
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                el.style.transform = `translateY(${rate}px) scale(1.05)`;
+            }
+        });
+        ticking = false;
+    }
+    
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(updateParallax);
+            ticking = true;
+        }
     });
 }
 
