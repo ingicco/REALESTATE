@@ -1402,6 +1402,10 @@ p {
         padding: var(--spacing-xl) 0 var(--spacing-md) 0;
     }
     
+    .luxury-benefits-section .section-subtitle {
+        font-size: 0.9rem;
+    }
+    
     /* Hide slider functionality on mobile */
     .luxury-slider {
         display: block;
@@ -1488,6 +1492,10 @@ p {
 }
 
 @media (max-width: 480px) {
+    .luxury-benefits-section .section-subtitle {
+        font-size: 0.85rem;
+    }
+    
     .mobile-benefit-image {
         height: 180px;
         border-radius: 12px;
