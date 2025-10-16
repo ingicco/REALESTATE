@@ -18,7 +18,7 @@
         <div class="container">
             <div class="hero-grid">
                 <div class="hero-content">
-                    <h1 class="hero-title">Where Institutional Capital Meets Dubai's Finest</h1>
+                    <h1 class="hero-title">Dubai's Most Exclusive Real Estate Advisory</h1>
                     <p class="hero-subtitle">Selective advisory for qualified investors seeking access to off-market opportunities, institutional intelligence, and white-glove execution.</p>
                     <div class="hero-cta">
                         <button class="btn btn-primary hero-btn" onclick="scrollToContact()">
@@ -50,7 +50,7 @@
             <div class="value-cards-grid">
                 <div class="value-card" onclick="openValueModal('investment')">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Asset Management" loading="lazy">
+                        <img src="images/asset-management.webp" alt="Asset Management" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="card-text-content">
@@ -65,7 +65,7 @@
                 
                 <div class="value-card" onclick="openValueModal('tax')">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Off-Market Opportunities" loading="lazy">
+                        <img src="images/off-market.WEBP" alt="Off-Market Opportunities" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="card-text-content">
@@ -80,7 +80,7 @@
                 
                 <div class="value-card" onclick="openValueModal('portfolio')">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Portfolio Strategy" loading="lazy">
+                        <img src="images/portfolio-strategy.WEBP" alt="Portfolio Strategy" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="card-text-content">
@@ -125,7 +125,7 @@
                 
                 <div class="value-card" onclick="openValueModal('relocation')">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800&q=80" alt="Relocation Services" loading="lazy">
+                        <img src="images/relocation-services.WEBP" alt="Relocation Services" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="card-text-content">
@@ -159,7 +159,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h3>Privacy Policy</h3>
-                <span class="close-modal">&times;</span>
+                <span class="close-modal" onclick="closePrivacyModal()">&times;</span>
             </div>
             <div class="modal-body">
                 <div class="privacy-content">
@@ -233,12 +233,12 @@
             
             <div class="testimonial-content">
                 <div class="testimonial-quote">
-                    "Expert advice, seamless process, and unmatched access to exclusive properties. Daniel and his smooth testicals made my investment journey in the UAE effortless and rewarding. I highly recommended him to my wife and her sister also her daughter and cousins brother. Their services to anyone seeking premier real estate opportunities."
+                    "After reviewing several advisory firms, their institutional approach and off-market access stood apart. The team provided strategic guidance that directly contributed to outperforming my portfolio targets. Their selective client model ensures genuine attention to detail, exactly what I needed for a nine-figure allocation."
                 </div>
                 
                 <div class="testimonial-author">
-                    <div class="author-name">Jordan Ellis</div>
-                    <div class="author-title">Global Midget Wrangler</div>
+                    <div class="author-name">Marcus R.</div>
+                    <div class="author-title">AED 127M Portfolio Investment</div>
                 </div>
             </div>
         </div>
@@ -276,9 +276,9 @@
                         </div>
                         
                         <div class="mobile-service-item">
-                            <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="reccomended porn">
+                            <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Market Forecasts">
                             <div class="service-text">
-                                <h3>reccomended porn</h3>
+                                <h3>Market Forecasts</h3>
                             </div>
                         </div>
                     </div>
@@ -305,9 +305,9 @@
                                 <h3>Market Analysis</h3>
                             </div>
                             
-                            <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="reccomended porn">
+                            <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" alt="Market Forecasts">
                             <div class="service-text">
-                                <h3>reccomended porn</h3>
+                                <h3>Market Forecasts</h3>
                             </div>
                         </div>
                         
@@ -466,7 +466,7 @@
                             <label class="checkbox-label">
                                 <input type="checkbox" id="privacy" name="privacy" required>
                                 <span class="checkmark"></span>
-                                <span class="checkbox-text">I agree to the <a href="#" class="privacy-link">Privacy Policy</a> and consent to being contacted regarding UAE investment opportunities *</span>
+                                <span class="checkbox-text">I agree to the <a href="#" class="privacy-link" onclick="openPrivacyModal(); return false;">Privacy Policy</a> and consent to being contacted regarding UAE investment opportunities *</span>
                             </label>
                         </div>
                         
@@ -541,21 +541,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Big Dick nice balls Real estate. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Sticky Mobile CTA -->
-    <div class="sticky-mobile-cta">
-        <button class="sticky-cta-btn" onclick="scrollToContact()">
-            <span>Submit Application</span>
-            <i class="fas fa-arrow-right"></i>
-        </button>
-    </div>
-
-    <script src="script.js?v=2.2"></script>
+    <script src="script.js?v=2.3"></script>
 </body>
 </html>

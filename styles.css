@@ -234,24 +234,24 @@ p {
 }
 
 .hero .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 var(--spacing-lg);
 }
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-3xl);
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: clamp(2rem, 4vw, 4rem);
     align-items: center;
 }
 
 .hero-content {
-    max-width: 500px;
+    max-width: 480px;
 }
 
 .hero-title {
-    font-size: clamp(3.5rem, 6vw, 5rem);
+    font-size: clamp(2.5rem, 4.5vw, 4.5rem);
     font-weight: 700;
     line-height: 0.95;
     color: var(--color-text-primary);
@@ -260,7 +260,7 @@ p {
 }
 
 .hero-subtitle {
-    font-size: 1.1rem;
+    font-size: clamp(0.95rem, 1vw, 1.05rem);
     line-height: 1.4;
     color: var(--color-text-secondary);
     margin-bottom: var(--spacing-lg);
@@ -296,11 +296,12 @@ p {
 
 .image-grid {
     display: grid;
-    grid-template-columns: 350px 240px;
-    grid-template-rows: 260px 170px;
-    gap: 20px;
-    width: 610px;
-    height: 450px;
+    grid-template-columns: 1.45fr 1fr;
+    grid-template-rows: 1.55fr 1fr;
+    gap: clamp(16px, 1.5vw, 24px);
+    width: min(56vw, 784px);
+    height: min(42vw, 584px);
+    max-width: 100%;
 }
 
 .image-item {
@@ -526,7 +527,7 @@ p {
 .value-cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-2xl);
+    gap: var(--spacing-lg);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -645,7 +646,7 @@ p {
 .value-cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-xl);
+    gap: var(--spacing-md);
     max-width: 100%;
     margin: 0 auto;
 }
@@ -653,7 +654,7 @@ p {
 @media (max-width: 768px) {
     .value-cards-grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-lg);
+        gap: var(--spacing-md);
     }
     
     /* Specialties grid on mobile */
@@ -2891,47 +2892,6 @@ p {
 
 /* ===== MOBILE BOTTOM NAVIGATION ===== */
 
-/* Sticky Mobile CTA */
-.sticky-mobile-cta {
-    display: none;
-}
-
-.sticky-cta-btn {
-    width: 100%;
-    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
-    color: white;
-    border: none;
-    padding: 18px 32px;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 32px rgba(26, 58, 82, 0.4);
-}
-
-.sticky-cta-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 40px rgba(26, 58, 82, 0.5);
-}
-
-.sticky-cta-btn:active {
-    transform: translateY(0);
-}
-
-.sticky-cta-btn i {
-    font-size: 0.9rem;
-    transition: transform 0.3s ease;
-}
-
-.sticky-cta-btn:hover i {
-    transform: translateX(4px);
-}
-
 /* ===== RESPONSIVE DESIGN ===== */
 
 @media (max-width: 1024px) {
@@ -2982,20 +2942,6 @@ p {
 
 @media (max-width: 768px) {
     /* Show mobile navigation */
-    /* Show sticky CTA on mobile */
-    .sticky-mobile-cta {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        right: 20px;
-        z-index: 1000;
-        display: block;
-    }
-    
-    /* Add bottom padding for sticky CTA */
-    body {
-        padding-bottom: 100px;
-    }
     
     /* Hide floating contact on mobile */
     .floating-contact {
@@ -4620,7 +4566,7 @@ html {
 
 .footer-note i {
     color: var(--color-accent);
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 
@@ -4839,7 +4785,7 @@ html {
 /* Fade in from bottom */
 .fade-in-up {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(60px);
 }
 
 .fade-in-up.animated {
@@ -4850,7 +4796,7 @@ html {
 /* Fade in from left */
 .fade-in-left {
     opacity: 0;
-    transform: translateX(-40px);
+    transform: translateX(-60px);
 }
 
 .fade-in-left.animated {
@@ -4861,7 +4807,7 @@ html {
 /* Fade in from right */
 .fade-in-right {
     opacity: 0;
-    transform: translateX(40px);
+    transform: translateX(60px);
 }
 
 .fade-in-right.animated {
@@ -4872,7 +4818,7 @@ html {
 /* Scale up animation */
 .scale-in {
     opacity: 0;
-    transform: scale(0.95);
+    transform: scale(0.9);
 }
 
 .scale-in.animated {
@@ -4893,8 +4839,9 @@ html {
 .fade-in-left,
 .fade-in-right,
 .scale-in {
-    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    --stagger-delay: 0s;
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1) var(--stagger-delay),
+                transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) var(--stagger-delay);
 }
 
 /* Slower, more dramatic animations for key sections */

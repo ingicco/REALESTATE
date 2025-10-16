@@ -1,4 +1,4 @@
-// ===== SOPHISTICATED WEBSITE FUNCTIONALITY ===== v2.0
+// ===== SOPHISTICATED WEBSITE FUNCTIONALITY ===== v2.3
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize core functionality
@@ -145,91 +145,200 @@ function initFloatingContact() {
 
 // Enhanced Scroll Animations with Continuous Effects
 function initScrollAnimations() {
-    console.log('Initializing enhanced continuous scroll animations');
-    
     const observerOptions = {
-        threshold: 0.2,
-        rootMargin: '0px 0px -80px 0px'
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
     };
     
-    // Continuous animation observer - animates both ways
+    // Continuous animation observer - animates every time element enters/exits viewport
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Add animated class when element enters viewport
                 entry.target.classList.add('animated');
-                console.log('Animating element:', entry.target.classList);
             } else {
-                // Remove animated class when element leaves viewport
-                // This makes the animation trigger again when scrolling back
+                // Remove animated class when scrolling away for continuous re-animation
                 entry.target.classList.remove('animated');
             }
         });
     }, observerOptions);
     
-    // Animate different element types with different effects
+    // Value Cards - Staggered fade up and scale
+    const valueCards = document.querySelectorAll('.value-card');
+    valueCards.forEach((card, index) => {
+        card.classList.add('fade-in-up');
+        card.style.setProperty('--stagger-delay', `${index * 0.12}s`);
+        observer.observe(card);
+    });
     
-    // Fade in from bottom - for cards and content blocks
-    const fadeUpElements = document.querySelectorAll(`
-        .value-card,
-        .services-column,
-        .service-text,
-        .faq-item,
-        .contact-form-container,
-        .contact-assurance,
-        .testimonial-content,
-        .benefits-cta
+    // Section Titles - Slide from left with fade
+    const sectionTitles = document.querySelectorAll(`
+        .value-section h2,
+        .services-header h2,
+        .contact-header h2,
+        .testimonials-section h2,
+        .luxury-benefits-section h2
     `);
-    console.log(`Found ${fadeUpElements.length} fade-up elements (including ${document.querySelectorAll('.value-card').length} value cards)`);
-    fadeUpElements.forEach((el, index) => {
+    sectionTitles.forEach(el => {
+        el.classList.add('fade-in-left');
+        observer.observe(el);
+    });
+    
+    // Section Subtitles and descriptions - Fade up with delay
+    const descriptions = document.querySelectorAll(`
+        .value-section p,
+        .services-header p,
+        .contact-header p,
+        .luxury-benefits-section > p
+    `);
+    descriptions.forEach(el => {
         el.classList.add('fade-in-up');
-        if (index > 0 && index < 6) {
-            el.classList.add(`stagger-${index}`);
-        }
+        el.style.setProperty('--stagger-delay', '0.15s');
         observer.observe(el);
     });
     
-    // Fade in from left - for text content (excluding hero)
-    const fadeLeftElements = document.querySelectorAll(`
-        .slider-content,
-        .services-header,
-        .faq-header,
-        .contact-header
+    // Services Section - Images scale in
+    const serviceImages = document.querySelectorAll('.services-column img, .image-item img');
+    serviceImages.forEach((img, index) => {
+        img.classList.add('scale-in');
+        img.style.setProperty('--stagger-delay', `${(index % 4) * 0.1}s`);
+        observer.observe(img);
+    });
+    
+    // Service columns and text - Fade from bottom
+    const serviceColumns = document.querySelectorAll('.services-column, .mobile-service-item');
+    serviceColumns.forEach((col, index) => {
+        col.classList.add('fade-in-up');
+        col.style.setProperty('--stagger-delay', `${index * 0.1}s`);
+        observer.observe(col);
+    });
+    
+    // Service sidebar - Fade from right
+    const serviceSidebar = document.querySelectorAll('.services-sidebar, .mobile-sidebar');
+    serviceSidebar.forEach(el => {
+        el.classList.add('fade-in-right');
+        observer.observe(el);
+    });
+    
+    // Sidebar sections - Stagger from right
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+    sidebarSections.forEach((section, index) => {
+        section.classList.add('fade-in-right');
+        section.style.setProperty('--stagger-delay', `${index * 0.1}s`);
+        observer.observe(section);
+    });
+    
+    // Slider Section - Split animation
+    const sliderContent = document.querySelector('.slider-content');
+    if (sliderContent) {
+        sliderContent.classList.add('fade-in-left', 'dramatic-animation');
+        observer.observe(sliderContent);
+    }
+    
+    const sliderImages = document.querySelector('.slider-images');
+    if (sliderImages) {
+        sliderImages.classList.add('fade-in-right', 'dramatic-animation');
+        observer.observe(sliderImages);
+    }
+    
+    // Individual slider elements - Slide title, description, nav
+    const slideTitle = document.querySelector('.slide-title');
+    if (slideTitle) {
+        slideTitle.classList.add('fade-in-left');
+        observer.observe(slideTitle);
+    }
+    
+    const slideDescription = document.querySelector('.slide-description');
+    if (slideDescription) {
+        slideDescription.classList.add('fade-in-up');
+        observer.observe(slideDescription);
+    }
+    
+    const sliderNav = document.querySelector('.slider-nav');
+    if (sliderNav) {
+        sliderNav.classList.add('fade-in-up');
+        observer.observe(sliderNav);
+    }
+    
+    // Image containers in slider
+    const imageContainers = document.querySelectorAll('.image-container');
+    imageContainers.forEach((container, index) => {
+        container.classList.add('scale-in');
+        container.style.setProperty('--stagger-delay', `${index * 0.15}s`);
+        observer.observe(container);
+    });
+    
+    // Testimonials - Scale and fade
+    const testimonialContent = document.querySelector('.testimonial-content');
+    if (testimonialContent) {
+        testimonialContent.classList.add('scale-in', 'dramatic-animation');
+        observer.observe(testimonialContent);
+    }
+    
+    const testimonialQuote = document.querySelector('.testimonial-quote');
+    if (testimonialQuote) {
+        testimonialQuote.classList.add('fade-in-up');
+        observer.observe(testimonialQuote);
+    }
+    
+    const testimonialAuthor = document.querySelector('.testimonial-author');
+    if (testimonialAuthor) {
+        testimonialAuthor.classList.add('fade-in-up');
+        testimonialAuthor.style.setProperty('--stagger-delay', '0.2s');
+        observer.observe(testimonialAuthor);
+    }
+    
+    // Contact Form - Split animation
+    const contactForm = document.querySelector('.contact-form-container');
+    if (contactForm) {
+        contactForm.classList.add('fade-in-left');
+        observer.observe(contactForm);
+    }
+    
+    const contactAssurance = document.querySelector('.contact-assurance');
+    if (contactAssurance) {
+        contactAssurance.classList.add('fade-in-right');
+        observer.observe(contactAssurance);
+    }
+    
+    // Contact form groups - Stagger
+    const formGroups = document.querySelectorAll('.contact-form-container .form-group');
+    formGroups.forEach((group, index) => {
+        group.classList.add('fade-in-up');
+        group.style.setProperty('--stagger-delay', `${index * 0.05}s`);
+        observer.observe(group);
+    });
+    
+    // Benefits CTA - Pop in
+    const benefitsCTA = document.querySelector('.benefits-cta');
+    if (benefitsCTA) {
+        benefitsCTA.classList.add('scale-in', 'dramatic-animation');
+        observer.observe(benefitsCTA);
+    }
+    
+    // All CTA Buttons - Scale in effect
+    const ctaButtons = document.querySelectorAll(`
+        .cta-btn,
+        .sidebar-cta,
+        .contact-submit-btn,
+        .benefits-cta-btn,
+        .sticky-cta-btn
     `);
-    fadeLeftElements.forEach(el => {
-        el.classList.add('fade-in-left', 'dramatic-animation');
-        observer.observe(el);
+    ctaButtons.forEach(btn => {
+        btn.classList.add('scale-in');
+        btn.style.setProperty('--stagger-delay', '0.3s');
+        observer.observe(btn);
     });
     
-    // Fade in from right - for images (excluding hero)
-    const fadeRightElements = document.querySelectorAll(`
-        .slider-images,
-        .services-sidebar,
-        .mobile-sidebar
-    `);
-    fadeRightElements.forEach(el => {
-        el.classList.add('fade-in-right', 'dramatic-animation');
-        observer.observe(el);
+    // Service titles - Fade from left
+    const serviceTitles = document.querySelectorAll('.service-text h3, .sidebar-section h3');
+    serviceTitles.forEach((title, index) => {
+        title.classList.add('fade-in-left');
+        title.style.setProperty('--stagger-delay', `${index * 0.08}s`);
+        observer.observe(title);
     });
     
-    // Scale in - for special elements
-    const scaleElements = document.querySelectorAll(`
-        .mobile-service-item img,
-        .services-column img,
-        .image-item img
-    `);
-    scaleElements.forEach((el, index) => {
-        el.classList.add('scale-in');
-        if (index < 6) {
-            el.classList.add(`stagger-${(index % 3) + 1}`);
-        }
-        observer.observe(el);
-    });
-    
-    // Parallax effect on scroll
+    // Initialize parallax effect
     initParallaxEffect();
-    
-    console.log(`Observing ${fadeUpElements.length + fadeLeftElements.length + fadeRightElements.length + scaleElements.length} elements for animation`);
 }
 
 // Parallax scrolling effect for images
@@ -956,6 +1065,7 @@ function initPrivacyModal() {
     privacyLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
+            e.stopPropagation();
             console.log('Privacy link clicked'); // Debug log
             openPrivacyModal();
         });
