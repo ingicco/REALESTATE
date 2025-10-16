@@ -1,4 +1,4 @@
-// ===== SOPHISTICATED WEBSITE FUNCTIONALITY ===== v2.3
+// ===== SOPHISTICATED WEBSITE FUNCTIONALITY ===== v2.6
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize core functionality
@@ -145,25 +145,32 @@ function initFloatingContact() {
 
 // Enhanced Scroll Animations with Continuous Effects
 function initScrollAnimations() {
+    console.log('🎬 Initializing scroll animations');
+    
     const observerOptions = {
-        threshold: 0.15,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
     };
     
-    // Continuous animation observer - animates every time element enters/exits viewport
+    // Continuous animation observer - animates IN when entering viewport, OUT when leaving
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('animated');
+                // Element is entering viewport - animate IN
+                entry.target.classList.add('in-view');
+                entry.target.classList.remove('out-of-view');
+                console.log('✅ Element entering view:', entry.target.className);
             } else {
-                // Remove animated class when scrolling away for continuous re-animation
-                entry.target.classList.remove('animated');
+                // Element is leaving viewport - animate OUT
+                entry.target.classList.remove('in-view');
+                entry.target.classList.add('out-of-view');
             }
         });
     }, observerOptions);
     
     // Value Cards - Staggered fade up and scale
     const valueCards = document.querySelectorAll('.value-card');
+    console.log(`📦 Found ${valueCards.length} value cards`);
     valueCards.forEach((card, index) => {
         card.classList.add('fade-in-up');
         card.style.setProperty('--stagger-delay', `${index * 0.12}s`);
@@ -336,6 +343,8 @@ function initScrollAnimations() {
         title.style.setProperty('--stagger-delay', `${index * 0.08}s`);
         observer.observe(title);
     });
+    
+    console.log('🎯 Scroll animations initialized successfully!');
     
     // Initialize parallax effect
     initParallaxEffect();

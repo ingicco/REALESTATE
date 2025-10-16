@@ -3177,25 +3177,7 @@ textarea:focus {
     }
 }
 
-.hero-content {
-    animation: fadeInUp 1s ease-out 0.3s both;
-}
-
-.hero-stats .stat-item {
-    animation: fadeInUp 0.8s ease-out both;
-}
-
-.hero-stats .stat-item:nth-child(1) { animation-delay: 0.5s; }
-.hero-stats .stat-item:nth-child(2) { animation-delay: 0.7s; }
-.hero-stats .stat-item:nth-child(3) { animation-delay: 0.9s; }
-
-.value-card {
-    animation: fadeInUp 0.8s ease-out both;
-}
-
-.value-card:nth-child(1) { animation-delay: 0.2s; }
-.value-card:nth-child(2) { animation-delay: 0.4s; }
-.value-card:nth-child(3) { animation-delay: 0.6s; }
+/* Removed old CSS animations - now using JavaScript Intersection Observer for scroll animations */
 
 /* Enhanced hover effects */
 .btn::before {
@@ -4782,48 +4764,68 @@ html {
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Fade in from bottom */
+/* Fade in from bottom - Default OUT state */
 .fade-in-up {
-    opacity: 0;
-    transform: translateY(60px);
+    opacity: 0 !important;
+    transform: translateY(80px) !important;
 }
 
-.fade-in-up.animated {
-    opacity: 1;
-    transform: translateY(0);
+.fade-in-up.in-view {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
-/* Fade in from left */
+.fade-in-up.out-of-view {
+    opacity: 0 !important;
+    transform: translateY(80px) !important;
+}
+
+/* Fade in from left - Default OUT state */
 .fade-in-left {
-    opacity: 0;
-    transform: translateX(-60px);
+    opacity: 0 !important;
+    transform: translateX(-80px) !important;
 }
 
-.fade-in-left.animated {
-    opacity: 1;
-    transform: translateX(0);
+.fade-in-left.in-view {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
 }
 
-/* Fade in from right */
+.fade-in-left.out-of-view {
+    opacity: 0 !important;
+    transform: translateX(-80px) !important;
+}
+
+/* Fade in from right - Default OUT state */
 .fade-in-right {
-    opacity: 0;
-    transform: translateX(60px);
+    opacity: 0 !important;
+    transform: translateX(80px) !important;
 }
 
-.fade-in-right.animated {
-    opacity: 1;
-    transform: translateX(0);
+.fade-in-right.in-view {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
 }
 
-/* Scale up animation */
+.fade-in-right.out-of-view {
+    opacity: 0 !important;
+    transform: translateX(80px) !important;
+}
+
+/* Scale up animation - Default OUT state */
 .scale-in {
-    opacity: 0;
-    transform: scale(0.9);
+    opacity: 0 !important;
+    transform: scale(0.8) !important;
 }
 
-.scale-in.animated {
-    opacity: 1;
-    transform: scale(1);
+.scale-in.in-view {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+.scale-in.out-of-view {
+    opacity: 0 !important;
+    transform: scale(0.8) !important;
 }
 
 /* Stagger animation delays for child elements */
@@ -4840,8 +4842,9 @@ html {
 .fade-in-right,
 .scale-in {
     --stagger-delay: 0s;
-    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1) var(--stagger-delay),
-                transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) var(--stagger-delay);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1) var(--stagger-delay),
+                transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) var(--stagger-delay);
+    will-change: opacity, transform;
 }
 
 /* Slower, more dramatic animations for key sections */
@@ -4888,31 +4891,38 @@ html {
 }
 
 
-/* Hero section - no animations, instant display for clean load */
+/* Hero section - keep visible on load, animations handled by JavaScript for other sections */
 .hero-content,
 .hero-title,
 .hero-subtitle,
 .hero-btn,
 .hero-images {
-    opacity: 1;
-    transform: none;
+    opacity: 1 !important;
+    transform: none !important;
 }
 
 /* More dramatic value card entrance */
 .value-card {
-    transition: all 1s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+    transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
 }
 
 .value-card.fade-in-up {
-    transform: translateY(80px) scale(0.95);
+    opacity: 0 !important;
+    transform: translateY(100px) scale(0.9) !important;
 }
 
-.value-card.fade-in-up.animated {
-    transform: translateY(0) scale(1);
+.value-card.fade-in-up.in-view {
+    opacity: 1 !important;
+    transform: translateY(0) scale(1) !important;
+}
+
+.value-card.fade-in-up.out-of-view {
+    opacity: 0 !important;
+    transform: translateY(100px) scale(0.9) !important;
 }
 
 /* Add hover lift effect that works with animations */
-.value-card:hover {
+.value-card.in-view:hover {
     transform: translateY(-10px) scale(1.02) !important;
 }
 
